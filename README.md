@@ -4,7 +4,7 @@ To enable us to develop code year-round and share useful code and documentation 
 
 Folders:
 
-<YEAR> - Yearly robot code developed for our robot
+YEAR - Yearly robot code developed for our robot
 
 Library - Library code to enable use of common sensors, algorithms, and functionalty used year-to-year with our robots
 
