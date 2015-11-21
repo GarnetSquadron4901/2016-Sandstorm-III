@@ -7329,7 +7329,7 @@
 <NumElts>4</NumElts>
 <String>
 <Name>ID</Name>
-<Val>LeftMotor,Controller 1,PWM 0</Val>
+<Val>LeftMotor,Controller 1,PWM 5</Val>
 </String>
 <Array>
 <Name>Joints</Name>
@@ -7489,7 +7489,7 @@
 <NumElts>4</NumElts>
 <String>
 <Name>ID</Name>
-<Val>CameraHorizontalServo,Controller 1,PWM 5</Val>
+<Val>CameraHorizontalServo,Controller 1,PWM 8</Val>
 </String>
 <Array>
 <Name>Joints</Name>
