@@ -8,7 +8,9 @@ YEAR - Yearly robot code and documentation developed for our robot
 
 Library - Library code to enable use of common sensors, algorithms, and functionalty used year-to-year with our robots
 
-Documentation - Documentation such as schematics and datasheets
+Documentation - Documentation such as datasheets
+
+Schematics - Specialized circuits we make
 
 Training - Training tools used by our team
 
