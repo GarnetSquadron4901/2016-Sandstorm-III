@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13511,6 +13511,11 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <text x="200.66" y="190.5" size="1.778" layer="97">Reset</text>
 <text x="68.58" y="-55.88" size="1.778" layer="91">Low Pass Filters for Analog Inputs</text>
 <text x="340.36" y="182.88" size="1.778" layer="91">40mA Max</text>
+<text x="-63.5" y="185.42" size="1.778" layer="91">Todo:</text>
+<text x="-55.88" y="182.88" size="1.778" layer="91">Make externally powered.</text>
+<text x="-55.88" y="185.42" size="1.778" layer="91">Make hole sizes larger.</text>
+<text x="-55.88" y="180.34" size="1.778" layer="91">Fix ground plane under LED header.</text>
+<text x="-55.88" y="177.8" size="1.778" layer="91">Reverse BlueSMiRF Header</text>
 </plain>
 <instances>
 <instance part="GND" gate="1" x="274.32" y="127" smashed="yes">

@@ -146,7 +146,7 @@
 <text x="76.2" y="96.52" size="2.54" layer="25" ratio="16">Control Board Controller</text>
 <text x="76.2" y="91.44" size="2.54" layer="25" ratio="16">Designed by:</text>
 <text x="76.2" y="86.36" size="2.54" layer="25" ratio="16">Ryan Nazaretian</text>
-<text x="76.2" y="81.28" size="2.54" layer="25" ratio="16">Revision 1.0</text>
+<text x="76.2" y="81.28" size="2.54" layer="25" ratio="16">Revision 1.1</text>
 </plain>
 <libraries>
 <library name="SparkFun">

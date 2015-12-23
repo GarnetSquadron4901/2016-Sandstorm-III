@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12521,12 +12521,12 @@ diameter 5 mm, grid 2.54 mm</description>
 <text x="-3.4544" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0" align="center">&gt;VALUE</text>
 </package>
 <package name="BLUESMIRF">
-<pad name="GND" x="40.64" y="6.731" drill="0.8" shape="long" rot="R180"/>
-<pad name="TX-O" x="40.64" y="9.271" drill="0.8" shape="long" rot="R180"/>
-<pad name="RX-I" x="40.64" y="11.811" drill="0.8" shape="long" rot="R180"/>
-<pad name="VCC" x="40.64" y="4.191" drill="0.8" shape="long" rot="R180"/>
-<pad name="RTS-O" x="40.64" y="14.351" drill="0.8" shape="long" rot="R180"/>
-<pad name="CTS-I" x="40.64" y="1.651" drill="0.8" shape="long" rot="R180"/>
+<pad name="TX-O" x="40.64" y="6.731" drill="0.8" shape="long" rot="R180"/>
+<pad name="GND" x="40.64" y="9.271" drill="0.8" shape="long" rot="R180"/>
+<pad name="VCC" x="40.64" y="11.811" drill="0.8" shape="long" rot="R180"/>
+<pad name="RX-I" x="40.64" y="4.191" drill="0.8" shape="long" rot="R180"/>
+<pad name="CTS-I" x="40.64" y="14.351" drill="0.8" shape="long" rot="R180"/>
+<pad name="RTS-O" x="40.64" y="1.651" drill="0.8" shape="long" rot="R180"/>
 <wire x1="41.91" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
 <wire x1="41.91" y1="0" x2="41.91" y2="2.921" width="0.127" layer="21"/>
 <wire x1="41.91" y1="2.921" x2="41.91" y2="5.461" width="0.127" layer="21"/>
@@ -12537,12 +12537,12 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="41.91" y1="16.002" x2="0" y2="16.002" width="0.127" layer="21"/>
 <wire x1="0" y1="0" x2="0" y2="16.002" width="0.127" layer="21"/>
 <text x="20.32" y="8.001" size="5.08" layer="21" align="center">BlueSMiRF</text>
-<text x="43.18" y="14.351" size="1.27" layer="21" font="vector" ratio="16" align="center-left">RTS-O</text>
-<text x="43.18" y="11.811" size="1.27" layer="21" font="vector" ratio="16" align="center-left">RX-I</text>
-<text x="43.18" y="9.271" size="1.27" layer="21" font="vector" ratio="16" align="center-left">TX-O</text>
-<text x="43.18" y="6.731" size="1.27" layer="21" font="vector" ratio="16" align="center-left">GND</text>
-<text x="43.18" y="4.191" size="1.27" layer="21" font="vector" ratio="16" align="center-left">VCC</text>
-<text x="43.18" y="1.651" size="1.27" layer="21" font="vector" ratio="16" align="center-left">CTS-I</text>
+<text x="43.18" y="14.351" size="1.27" layer="21" font="vector" ratio="16" align="center-left">CTS-I</text>
+<text x="43.18" y="11.811" size="1.27" layer="21" font="vector" ratio="16" align="center-left">VCC</text>
+<text x="43.18" y="9.271" size="1.27" layer="21" font="vector" ratio="16" align="center-left">GND</text>
+<text x="43.18" y="6.731" size="1.27" layer="21" font="vector" ratio="16" align="center-left">TX-O</text>
+<text x="43.18" y="4.191" size="1.27" layer="21" font="vector" ratio="16" align="center-left">RX-I</text>
+<text x="43.18" y="1.651" size="1.27" layer="21" font="vector" ratio="16" align="center-left">RTS-O</text>
 <wire x1="41.91" y1="0" x2="49.53" y2="0" width="0.127" layer="21"/>
 <wire x1="49.53" y1="0" x2="49.53" y2="2.921" width="0.127" layer="21"/>
 <wire x1="49.53" y1="2.921" x2="49.53" y2="5.461" width="0.127" layer="21"/>

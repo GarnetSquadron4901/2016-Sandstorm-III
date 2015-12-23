@@ -2907,6 +2907,10 @@ design rules under a new name.</description>
 <contactref element="C36" pad="-"/>
 <contactref element="R12" pad="1"/>
 <contactref element="U$19" pad="GND"/>
+<via x="2.54" y="64.897" extent="1-16" drill="0.6"/>
+<via x="7.366" y="64.897" extent="1-16" drill="0.6"/>
+<via x="2.54" y="54.483" extent="1-16" drill="0.6"/>
+<via x="7.366" y="54.483" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="AREF">
 <contactref element="GND" pad="98"/>

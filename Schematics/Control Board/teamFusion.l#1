@@ -57,24 +57,24 @@
 <library>
 <packages>
 <package name="PWMHEADER">
-<pad name="+5V@4" x="3.81" y="34.29" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="9" x="1.27" y="34.29" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="GND@4" x="6.35" y="34.29" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="10" x="1.27" y="36.83" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="8" x="1.27" y="31.75" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="7" x="1.27" y="29.21" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="6" x="1.27" y="26.67" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="5" x="1.27" y="24.13" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="+5V@8" x="3.81" y="24.13" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="+5V@7" x="3.81" y="26.67" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="+5V@6" x="3.81" y="29.21" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="+5V@5" x="3.81" y="31.75" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="+5V@3" x="3.81" y="36.83" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="GND@3" x="6.35" y="36.83" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="GND@5" x="6.35" y="31.75" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="GND@6" x="6.35" y="29.21" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="GND@7" x="6.35" y="26.67" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="GND@8" x="6.35" y="24.13" drill="1.016" diameter="1.8796" shape="octagon"/>
+<pad name="+5V@4" x="3.81" y="34.29" drill="1.2" shape="octagon"/>
+<pad name="9" x="1.27" y="34.29" drill="1.2" shape="octagon"/>
+<pad name="GND@4" x="6.35" y="34.29" drill="1.2" shape="octagon"/>
+<pad name="10" x="1.27" y="36.83" drill="1.2" shape="octagon"/>
+<pad name="8" x="1.27" y="31.75" drill="1.2" shape="octagon"/>
+<pad name="7" x="1.27" y="29.21" drill="1.2" shape="octagon"/>
+<pad name="6" x="1.27" y="26.67" drill="1.2" shape="octagon"/>
+<pad name="5" x="1.27" y="24.13" drill="1.2" shape="octagon"/>
+<pad name="+5V@8" x="3.81" y="24.13" drill="1.2" shape="octagon"/>
+<pad name="+5V@7" x="3.81" y="26.67" drill="1.2" shape="octagon"/>
+<pad name="+5V@6" x="3.81" y="29.21" drill="1.2" shape="octagon"/>
+<pad name="+5V@5" x="3.81" y="31.75" drill="1.2" shape="octagon"/>
+<pad name="+5V@3" x="3.81" y="36.83" drill="1.2" shape="octagon"/>
+<pad name="GND@3" x="6.35" y="36.83" drill="1.2" shape="octagon"/>
+<pad name="GND@5" x="6.35" y="31.75" drill="1.2" shape="octagon"/>
+<pad name="GND@6" x="6.35" y="29.21" drill="1.2" shape="octagon"/>
+<pad name="GND@7" x="6.35" y="26.67" drill="1.2" shape="octagon"/>
+<pad name="GND@8" x="6.35" y="24.13" drill="1.2" shape="octagon"/>
 <text x="8.89" y="36.83" size="1.27" layer="21" font="vector" ratio="16" align="center-left">PWM10</text>
 <text x="8.89" y="34.29" size="1.27" layer="21" font="vector" ratio="16" align="center-left">PWM9</text>
 <text x="8.89" y="31.75" size="1.27" layer="21" font="vector" ratio="16" align="center-left">PWM8</text>
@@ -86,21 +86,21 @@
 <text x="8.89" y="16.51" size="1.27" layer="21" font="vector" ratio="16" align="center-left">PWM2</text>
 <text x="8.89" y="13.97" size="1.27" layer="21" font="vector" ratio="16" align="center-left">PWM1</text>
 <text x="8.89" y="11.43" size="1.27" layer="21" font="vector" ratio="16" align="center-left">PWM0</text>
-<pad name="4" x="1.27" y="21.59" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="3" x="1.27" y="19.05" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="2" x="1.27" y="16.51" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="1" x="1.27" y="13.97" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="0" x="1.27" y="11.43" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="+5V@13" x="3.81" y="11.43" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="+5V@12" x="3.81" y="13.97" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="+5V@11" x="3.81" y="16.51" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="+5V@10" x="3.81" y="19.05" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="+5V@9" x="3.81" y="21.59" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="GND@9" x="6.35" y="21.59" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="GND@10" x="6.35" y="19.05" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="GND@11" x="6.35" y="16.51" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="GND@12" x="6.35" y="13.97" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="GND@13" x="6.35" y="11.43" drill="1.016" diameter="1.8796" shape="octagon"/>
+<pad name="4" x="1.27" y="21.59" drill="1.2" shape="octagon"/>
+<pad name="3" x="1.27" y="19.05" drill="1.2" shape="octagon"/>
+<pad name="2" x="1.27" y="16.51" drill="1.2" shape="octagon"/>
+<pad name="1" x="1.27" y="13.97" drill="1.2" shape="octagon"/>
+<pad name="0" x="1.27" y="11.43" drill="1.2" shape="octagon"/>
+<pad name="+5V@13" x="3.81" y="11.43" drill="1.2" shape="octagon"/>
+<pad name="+5V@12" x="3.81" y="13.97" drill="1.2" shape="octagon"/>
+<pad name="+5V@11" x="3.81" y="16.51" drill="1.2" shape="octagon"/>
+<pad name="+5V@10" x="3.81" y="19.05" drill="1.2" shape="octagon"/>
+<pad name="+5V@9" x="3.81" y="21.59" drill="1.2" shape="octagon"/>
+<pad name="GND@9" x="6.35" y="21.59" drill="1.2" shape="octagon"/>
+<pad name="GND@10" x="6.35" y="19.05" drill="1.2" shape="octagon"/>
+<pad name="GND@11" x="6.35" y="16.51" drill="1.2" shape="octagon"/>
+<pad name="GND@12" x="6.35" y="13.97" drill="1.2" shape="octagon"/>
+<pad name="GND@13" x="6.35" y="11.43" drill="1.2" shape="octagon"/>
 <text x="1.27" y="8.89" size="1.27" layer="21" font="vector" ratio="16" rot="R270" align="center-left">SIG (W)</text>
 <text x="3.81" y="8.89" size="1.27" layer="21" font="vector" ratio="16" rot="R270" align="center-left">+5V (R)</text>
 <text x="6.35" y="8.89" size="1.27" layer="21" font="vector" ratio="16" rot="R270" align="center-left">GND (B)</text>
