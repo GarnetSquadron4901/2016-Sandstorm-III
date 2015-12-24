@@ -1477,50 +1477,6 @@ FT232RL 4&lt;sup&gt;th&lt;/sup&gt; Generation USB UART (USB &amp;lt;-&amp;gt; Se
 <pad name="GND@2" x="12.0396" y="10.287" drill="2.8" shape="long" rot="R90"/>
 <pad name="GND@1" x="0" y="10.287" drill="2.8" shape="long" rot="R90"/>
 </package>
-<package name="I2CHEADER">
-<pad name="GND@0" x="1.27" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="VCC@0" x="1.27" y="3.81" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="SCL@0" x="1.27" y="6.35" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="SDA@0" x="1.27" y="8.89" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="SDA@1" x="3.81" y="8.89" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="SCL@1" x="3.81" y="6.35" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="VCC@1" x="3.81" y="3.81" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="GND@1" x="3.81" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="GND@2" x="6.35" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="VCC@2" x="6.35" y="3.81" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="SCL@2" x="6.35" y="6.35" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="SDA@2" x="6.35" y="8.89" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="SDA@3" x="8.89" y="8.89" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="SCL@3" x="8.89" y="6.35" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="VCC@3" x="8.89" y="3.81" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="GND@3" x="8.89" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
-<text x="-1.27" y="1.27" size="1.27" layer="21" font="vector" ratio="16" rot="R180" align="center-left">GND</text>
-<text x="-1.27" y="3.81" size="1.27" layer="21" font="vector" ratio="16" rot="R180" align="center-left">+5V</text>
-<text x="-1.27" y="6.35" size="1.27" layer="21" font="vector" ratio="16" rot="R180" align="center-left">SCL</text>
-<text x="-1.27" y="8.89" size="1.27" layer="21" font="vector" ratio="16" rot="R180" align="center-left">SDA</text>
-<wire x1="-6.35" y1="2.54" x2="10.16" y2="2.54" width="0.4064" layer="21"/>
-<wire x1="10.16" y1="2.54" x2="10.16" y2="5.08" width="0.4064" layer="21"/>
-<wire x1="10.16" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="21"/>
-<wire x1="-6.35" y1="7.62" x2="10.16" y2="7.62" width="0.4064" layer="21"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="10.16" width="0.4064" layer="21"/>
-<wire x1="10.16" y1="10.16" x2="0" y2="10.16" width="0.4064" layer="21"/>
-<wire x1="0" y1="10.16" x2="-6.35" y2="10.16" width="0.4064" layer="21"/>
-<wire x1="-6.35" y1="10.16" x2="-6.35" y2="7.62" width="0.4064" layer="21"/>
-<wire x1="-6.35" y1="7.62" x2="-6.35" y2="5.08" width="0.4064" layer="21"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="2.54" width="0.4064" layer="21"/>
-<wire x1="-6.35" y1="2.54" x2="-6.35" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.35" y1="0" x2="0" y2="0" width="0.4064" layer="21"/>
-<wire x1="0" y1="0" x2="10.16" y2="0" width="0.4064" layer="21"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="2.54" width="0.4064" layer="21"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="7.62" width="0.4064" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="10.16" width="0.4064" layer="21"/>
-<text x="1.905" y="11.43" size="1.27" layer="21" font="vector" ratio="16" align="center">I2C HEADER</text>
-<wire x1="-6.35" y1="10.16" x2="-6.35" y2="12.7" width="0.4064" layer="21"/>
-<wire x1="-6.35" y1="12.7" x2="10.16" y2="12.7" width="0.4064" layer="21"/>
-<wire x1="10.16" y1="12.7" x2="10.16" y2="10.16" width="0.4064" layer="21"/>
-<rectangle x1="-6.35" y1="10.16" x2="-3.81" y2="12.7" layer="21"/>
-<rectangle x1="7.62" y1="10.16" x2="10.16" y2="12.7" layer="21"/>
-</package>
 <package name="DIGITALIN">
 <pad name="DI5" x="-5.08" y="2.54" drill="1.016" diameter="1.8796" shape="octagon"/>
 <pad name="GND@5" x="-5.08" y="0" drill="1.016" diameter="1.8796" shape="octagon"/>
@@ -1964,17 +1920,6 @@ FT232RL 4&lt;sup&gt;th&lt;/sup&gt; Generation USB UART (USB &amp;lt;-&amp;gt; Se
 <wire x1="2.54" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
 </symbol>
-<symbol name="I2CHEADER">
-<text x="3.81" y="1.27" size="2.54" layer="94" font="vector" ratio="16" rot="R90" align="center">I2C</text>
-<pin name="GND" x="17.78" y="5.08" visible="pin" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCC" x="17.78" y="2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
-<pin name="SCL" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="SDA" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<wire x1="0" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="7.62" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0" y2="7.62" width="0.254" layer="94"/>
-</symbol>
 <symbol name="DIGITALIN">
 <pin name="GND" x="-12.7" y="-20.32" visible="pin" length="middle" direction="pwr"/>
 <pin name="DI0" x="-12.7" y="-17.78" visible="pin" length="middle"/>
@@ -2127,24 +2072,6 @@ FT232RL 4&lt;sup&gt;th&lt;/sup&gt; Generation USB UART (USB &amp;lt;-&amp;gt; Se
 <connect gate="G$1" pin="D+" pad="+DATA"/>
 <connect gate="G$1" pin="D-" pad="-DATA"/>
 <connect gate="G$1" pin="GND" pad="GND@0 GND@1 GND@2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="I2CHEADER">
-<gates>
-<gate name="G$1" symbol="I2CHEADER" x="0" y="5.08"/>
-</gates>
-<devices>
-<device name="" package="I2CHEADER">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND@0 GND@1 GND@2 GND@3"/>
-<connect gate="G$1" pin="SCL" pad="SCL@0 SCL@1 SCL@2 SCL@3"/>
-<connect gate="G$1" pin="SDA" pad="SDA@0 SDA@1 SDA@2 SDA@3"/>
-<connect gate="G$1" pin="VCC" pad="VCC@0 VCC@1 VCC@2 VCC@3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9127,8 +9054,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C6" library="rcl" deviceset="C-US" device="C1206" value="0.1uF"/>
 <part name="C7" library="rcl" deviceset="C-US" device="C1206" value="0.1uF"/>
 <part name="C8" library="rcl" deviceset="C-US" device="C1206" value="0.1uF"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="M1206" value="10k"/>
-<part name="R5" library="rcl" deviceset="R-US_" device="M1206" value="10k"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="M1206" value="170"/>
 <part name="POWER" library="SparkFun-LED" deviceset="LED" device="3MM"/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
@@ -9136,13 +9061,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="STATUS" library="SparkFun-LED" deviceset="LED" device="3MM"/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="RESET" library="switch-omron" deviceset="10-XX" device=""/>
-<part name="C9" library="rcl" deviceset="C-US" device="C1206" value="0.1uF"/>
-<part name="C10" library="rcl" deviceset="C-US" device="C1206" value="10uF"/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="U4" library="SparkFun" deviceset="FT232RL" device="SSOP"/>
-<part name="GND17" library="SparkFun" deviceset="GND" device=""/>
-<part name="GND18" library="SparkFun" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="M1206" value="280"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="M1206" value="315"/>
 <part name="TX" library="SparkFun-LED" deviceset="LED" device="3MM"/>
@@ -9162,14 +9083,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="U$12" library="teamFusion" deviceset="ANALOGHEADER" device=""/>
 <part name="U$13" library="SparkFun" deviceset="5V" device=""/>
 <part name="U$14" library="teamFusion" deviceset="UE27BC54130-USB" device=""/>
-<part name="U$15" library="teamFusion" deviceset="I2CHEADER" device=""/>
-<part name="C30" library="rcl" deviceset="C-US" device="C1206" value="10uF"/>
 <part name="C31" library="rcl" deviceset="C-US" device="C1206" value="10uF"/>
 <part name="C32" library="rcl" deviceset="C-US" device="C1206" value="10uF"/>
 <part name="F1" library="SparkFun-PowerIC" deviceset="PTC" device="SMD" value="500mA"/>
 <part name="U$2" library="teamFusion" deviceset="DIGITALIN" device=""/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
-<part name="U$9" library="SparkFun" deviceset="5V" device=""/>
 <part name="C1" library="rcl" deviceset="C-US" device="C1206" value="0.1uF"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$11" library="teamFusion" deviceset="DIGITALOUTPUTS" device=""/>
@@ -9223,8 +9141,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="C6" gate="G$1" x="220.98" y="162.56"/>
 <instance part="C7" gate="G$1" x="213.36" y="162.56"/>
 <instance part="C8" gate="G$1" x="205.74" y="162.56"/>
-<instance part="R4" gate="G$1" x="58.42" y="40.64"/>
-<instance part="R5" gate="G$1" x="58.42" y="30.48"/>
 <instance part="R6" gate="G$1" x="124.46" y="218.44" rot="R90"/>
 <instance part="POWER" gate="G$1" x="124.46" y="208.28"/>
 <instance part="GND12" gate="1" x="124.46" y="198.12"/>
@@ -9232,13 +9148,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="STATUS" gate="G$1" x="337.82" y="160.02"/>
 <instance part="GND13" gate="1" x="337.82" y="149.86"/>
 <instance part="RESET" gate="1" x="200.66" y="195.58"/>
-<instance part="C9" gate="G$1" x="33.02" y="160.02"/>
-<instance part="C10" gate="G$1" x="43.18" y="160.02"/>
 <instance part="GND15" gate="1" x="73.66" y="134.62"/>
 <instance part="GND16" gate="1" x="12.7" y="187.96" rot="R180"/>
 <instance part="U4" gate="G$1" x="91.44" y="157.48"/>
-<instance part="GND17" gate="1" x="33.02" y="149.86"/>
-<instance part="GND18" gate="1" x="43.18" y="149.86"/>
 <instance part="R1" gate="G$1" x="147.32" y="167.64" rot="R90"/>
 <instance part="R2" gate="G$1" x="154.94" y="167.64" rot="R90"/>
 <instance part="TX" gate="G$1" x="147.32" y="157.48"/>
@@ -9258,14 +9170,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="U$12" gate="G$1" x="86.36" y="-15.24"/>
 <instance part="U$13" gate="G$1" x="144.78" y="5.08"/>
 <instance part="U$14" gate="G$1" x="-2.54" y="175.26"/>
-<instance part="U$15" gate="G$1" x="20.32" y="43.18"/>
-<instance part="C30" gate="G$1" x="66.04" y="50.8" rot="R180"/>
 <instance part="C31" gate="G$1" x="152.4" y="-20.32"/>
 <instance part="C32" gate="G$1" x="139.7" y="127"/>
 <instance part="F1" gate="G$1" x="20.32" y="177.8"/>
 <instance part="U$2" gate="G$1" x="226.06" y="-15.24"/>
 <instance part="GND1" gate="1" x="210.82" y="-40.64"/>
-<instance part="U$9" gate="G$1" x="78.74" y="48.26"/>
 <instance part="C1" gate="G$1" x="53.34" y="160.02"/>
 <instance part="GND5" gate="1" x="53.34" y="149.86"/>
 <instance part="U$11" gate="A" x="220.98" y="-127"/>
@@ -9439,16 +9348,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C9" gate="G$1" pin="2"/>
-<pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="33.02" y1="154.94" x2="33.02" y2="152.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="43.18" y1="152.4" x2="43.18" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="2"/>
-<pinref part="GND18" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="U$10" gate="G$1" pin="GND"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="152.4" y1="81.28" x2="144.78" y2="81.28" width="0.1524" layer="91"/>
@@ -9525,15 +9424,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <junction x="137.16" y="-50.8"/>
 <pinref part="CN4" gate="D" pin="1"/>
 <junction x="144.78" y="-50.8"/>
-</segment>
-<segment>
-<pinref part="U$15" gate="G$1" pin="GND"/>
-<wire x1="38.1" y1="48.26" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
-<label x="35.56" y="48.26" size="1.778" layer="95"/>
-<wire x1="53.34" y1="48.26" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="58.42" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="C30" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="58.42" x2="66.04" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
@@ -10024,28 +9914,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="314.96" y="116.84" size="1.778" layer="95"/>
 <pinref part="GND" gate="1" pin="(SCL/INT0)PD0"/>
 </segment>
-<segment>
-<pinref part="U$15" gate="G$1" pin="SCL"/>
-<wire x1="38.1" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
-<label x="35.56" y="43.18" size="1.778" layer="95"/>
-<wire x1="50.8" y1="43.18" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="40.64" x2="53.34" y2="40.64" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="DIO20(SDA)" class="0">
 <segment>
 <wire x1="309.88" y1="119.38" x2="332.74" y2="119.38" width="0.1524" layer="91"/>
 <label x="314.96" y="119.38" size="1.778" layer="95"/>
 <pinref part="GND" gate="1" pin="(SDA/INT1)PD1"/>
-</segment>
-<segment>
-<pinref part="U$15" gate="G$1" pin="SDA"/>
-<wire x1="38.1" y1="40.64" x2="43.18" y2="40.64" width="0.1524" layer="91"/>
-<label x="35.56" y="40.64" size="1.778" layer="95"/>
-<wire x1="43.18" y1="40.64" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DIO19(RX1)" class="0">
@@ -10434,22 +10308,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="5V" class="1">
 <segment>
-<wire x1="33.02" y1="177.8" x2="43.18" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="177.8" x2="60.96" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="177.8" x2="60.96" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="177.8" x2="60.96" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="167.64" x2="76.2" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="162.56" x2="43.18" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="162.56" x2="33.02" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="180.34" x2="60.96" y2="177.8" width="0.1524" layer="91"/>
-<junction x="43.18" y="177.8"/>
 <junction x="60.96" y="177.8"/>
 <pinref part="U4" gate="G$1" pin="VCC"/>
-<pinref part="C10" gate="G$1" pin="1"/>
-<pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="U$4" gate="G$1" pin="5V"/>
 <pinref part="F1" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="177.8" x2="33.02" y2="177.8" width="0.1524" layer="91"/>
-<junction x="33.02" y="177.8"/>
 <pinref part="U4" gate="G$1" pin="VCCIO"/>
 <wire x1="76.2" y1="162.56" x2="60.96" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="162.56" x2="60.96" y2="167.64" width="0.1524" layer="91"/>
@@ -10550,23 +10416,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="162.56" y1="-17.78" x2="162.56" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="2.54" x2="152.4" y2="2.54" width="0.1524" layer="91"/>
 <junction x="152.4" y="2.54"/>
-</segment>
-<segment>
-<wire x1="63.5" y1="40.64" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="40.64" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="30.48" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="48.26" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
-<junction x="66.04" y="40.64"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="C30" gate="G$1" pin="1"/>
-<pinref part="U$15" gate="G$1" pin="VCC"/>
-<wire x1="66.04" y1="45.72" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="45.72" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
-<junction x="66.04" y="45.72"/>
-<pinref part="U$9" gate="G$1" pin="5V"/>
-<wire x1="78.74" y1="45.72" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="VCC"/>
