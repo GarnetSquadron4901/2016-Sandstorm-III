@@ -174,9 +174,9 @@
 <rectangle x1="-0.2921" y1="2.9337" x2="-0.2667" y2="2.9591" layer="201"/>
 <rectangle x1="-0.3429" y1="2.9337" x2="-0.3175" y2="2.9591" layer="202"/>
 <rectangle x1="-0.5207" y1="2.9337" x2="-0.3429" y2="2.9591" layer="203"/>
-<text x="52.324" y="65.913" size="2.54" layer="25" ratio="16">Designed by:</text>
-<text x="52.324" y="62.103" size="2.54" layer="25" ratio="16">Ryan Nazaretian</text>
-<text x="52.324" y="58.293" size="2.54" layer="25" ratio="16">Revision 1.1</text>
+<text x="47.117" y="69.215" size="2.54" layer="25" ratio="16">Designed by:</text>
+<text x="47.117" y="65.405" size="2.54" layer="25" ratio="16">Ryan Nazaretian</text>
+<text x="47.117" y="61.595" size="2.54" layer="25" ratio="16">Revision 1.1</text>
 </plain>
 <libraries>
 <library name="SparkFun">
