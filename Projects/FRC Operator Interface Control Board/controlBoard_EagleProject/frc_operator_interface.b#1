@@ -2627,7 +2627,7 @@ MELF 0.25 W</description>
 <element name="C29" library="rcl" package="C1206" value="0.1uF" x="43.111659375" y="17.44575625"/>
 <element name="C34" library="rcl" package="C1206" value="0.1uF" x="73.152" y="86.36" rot="R90"/>
 <element name="C35" library="rcl" package="C1206" value="0.1uF" x="83.44535" y="73.6092" rot="R180"/>
-<element name="R12" library="rcl" package="M1206" value="2.55K" x="21.92655" y="21.81225" rot="R90"/>
+<element name="R12" library="rcl" package="M1206" value="2.52K" x="21.92655" y="21.81225" rot="R90"/>
 <element name="CN1" library="resistor-dil" package="EXB38V" value="1uF" x="71.3994" y="24.511" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="71.3994" y="24.511" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="71.3994" y="24.511" size="1.778" layer="27" rot="R90" display="off"/>
