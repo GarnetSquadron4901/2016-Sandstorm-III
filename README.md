@@ -1,17 +1,17 @@
-FIRST Robotics Team 4901 - Garnet Squadron - Control System Repository
+FIRST Robotics Team 4901 - Garnet Squadron
 
-To enable us to develop code year-round and share useful code and documentation amongst the FIRST community, this repository will contain all of team 4901's robot code and tools for the 2016 competition year and later. 
+This is a centralized repository for team 4901. 
 
 Folders:
 
-YEAR - Yearly robot code and documentation developed for our robot
+YEAR - Yearly robot CAD, code, design, and documentation for our robot
 
 Library - Library code to enable use of common sensors, algorithms, and functionalty used year-to-year with our robots
 
-Documentation - Documentation such as datasheets
+Documentation - Documentation for devices such as datasheets, drawings, or schematics
 
-Schematics - Specialized circuits we make
+Projects - Any special projects will go in here.
 
 Training - Training tools used by our team
 
-Beta - Working area for stuff that has not been tested
+Misc - Working area for stuff that has not been tested or isn't adopted completely by our team. Use this folder to play around in!
