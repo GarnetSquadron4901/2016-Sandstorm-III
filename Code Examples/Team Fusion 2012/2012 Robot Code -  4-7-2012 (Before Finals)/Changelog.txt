@@ -1,0 +1,2 @@
+Simplified some of the shooter logic in Teleop.vi and Shooter Controller.vi.
+Attempted to fix the Brake Code
