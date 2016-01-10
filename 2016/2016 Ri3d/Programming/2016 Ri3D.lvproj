@@ -116,9 +116,16 @@ AddOutputFilter chunkFilter
 		<Item Name="Team Code" Type="Folder">
 			<Item Name="Joysticks" Type="Folder">
 				<Item Name="Joystick - Array to Cluster.vi" Type="VI" URL="../Joystick - Array to Cluster.vi"/>
+				<Item Name="Joystick - Begin All.vi" Type="VI" URL="../Joystick - Begin All.vi"/>
 				<Item Name="Joystick Axes Cluster.ctl" Type="VI" URL="../Joystick Axes Cluster.ctl"/>
 				<Item Name="Left Joystick Get All.vi" Type="VI" URL="../Left Joystick Get All.vi"/>
 				<Item Name="Right Joystick Get All.vi" Type="VI" URL="../Right Joystick Get All.vi"/>
+			</Item>
+			<Item Name="Manipulator" Type="Folder">
+				<Item Name="Manipulator - Begin.vi" Type="VI" URL="../Manipulator - Begin.vi"/>
+			</Item>
+			<Item Name="Robot Drive" Type="Folder">
+				<Item Name="Robot Drive - Begin.vi" Type="VI" URL="../Robot Drive - Begin.vi"/>
 			</Item>
 			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
 			<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
