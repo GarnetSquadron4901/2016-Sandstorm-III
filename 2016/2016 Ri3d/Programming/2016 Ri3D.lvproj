@@ -125,16 +125,16 @@ AddOutputFilter chunkFilter
 				<Item Name="Manipulator - Begin.vi" Type="VI" URL="../Manipulator - Begin.vi"/>
 			</Item>
 			<Item Name="REV Digit" Type="Folder">
-				<Item Name="Blink Rate.ctl" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/REV Robotics/Blink Rate.ctl"/>
-				<Item Name="Brightness Set.vi" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/REV Robotics/Brightness Set.vi"/>
-				<Item Name="Brightness.ctl" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/REV Robotics/Brightness.ctl"/>
-				<Item Name="Display Setup.vi" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/REV Robotics/Display Setup.vi"/>
-				<Item Name="Display.ctl" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/REV Robotics/Display.ctl"/>
-				<Item Name="Open.vi" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/REV Robotics/Open.vi"/>
-				<Item Name="Oscillator.ctl" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/REV Robotics/Oscillator.ctl"/>
-				<Item Name="System Setup.vi" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/REV Robotics/System Setup.vi"/>
-				<Item Name="Write Display.vi" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/REV Robotics/Write Display.vi"/>
-				<Item Name="Write String.vi" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/REV Robotics/Write String.vi"/>
+				<Item Name="Blink Rate.ctl" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/Blink Rate.ctl"/>
+				<Item Name="Brightness Set.vi" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/Brightness Set.vi"/>
+				<Item Name="Brightness.ctl" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/Brightness.ctl"/>
+				<Item Name="Display Setup.vi" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/Display Setup.vi"/>
+				<Item Name="Display.ctl" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/Display.ctl"/>
+				<Item Name="Open.vi" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/Open.vi"/>
+				<Item Name="Oscillator.ctl" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/Oscillator.ctl"/>
+				<Item Name="System Setup.vi" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/System Setup.vi"/>
+				<Item Name="Write Display.vi" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/Write Display.vi"/>
+				<Item Name="Write String.vi" Type="VI" URL="../../../../Library/REV Digit MXP/LabVIEW/Write String.vi"/>
 			</Item>
 			<Item Name="Robot Drive" Type="Folder">
 				<Item Name="Robot Drive - Begin.vi" Type="VI" URL="../Robot Drive - Begin.vi"/>
