@@ -114,6 +114,16 @@ AddOutputFilter chunkFilter
 			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
 		</Item>
 		<Item Name="Team Code" Type="Folder">
+			<Item Name="Joysticks" Type="Folder">
+				<Item Name="Joystick - Array to Cluster.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Joystick - Array to Cluster.vi"/>
+				<Item Name="Joystick - Begin All.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Joystick - Begin All.vi"/>
+				<Item Name="Joystick - Close All.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Joystick - Close All.vi"/>
+				<Item Name="Joystick - Logitech Attack 3 - Left - Get All.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Joystick - Logitech Attack 3 - Left - Get All.vi"/>
+				<Item Name="Joystick - Logitech Attack 3 - Right - Get All.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Joystick - Logitech Attack 3 - Right - Get All.vi"/>
+				<Item Name="Logitech Attack 3 Axis Map.ctl" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Logitech Attack 3 Axis Map.ctl"/>
+				<Item Name="Logitech Attack 3 Button Map.ctl" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Logitech Attack 3 Button Map.ctl"/>
+			</Item>
+			<Item Name="Robot Drive" Type="Folder"/>
 			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
 			<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
 			<Item Name="Disabled.vi" Type="VI" URL="../Disabled.vi"/>
@@ -616,10 +626,6 @@ AddOutputFilter chunkFilter
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Joystick - Array to Cluster.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joystick - Array to Cluster.vi"/>
-			<Item Name="Left Joystick Get All.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Left Joystick Get All.vi"/>
-			<Item Name="Logitech Attack 3 Axis Map.ctl" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Logitech Attack 3 Axis Map.ctl"/>
-			<Item Name="Logitech Attack 3 Button Map.ctl" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Logitech Attack 3 Button Map.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -632,7 +638,6 @@ AddOutputFilter chunkFilter
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Right Joystick Get All.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Right Joystick Get All.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
