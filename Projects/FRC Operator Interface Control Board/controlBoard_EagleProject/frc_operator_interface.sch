@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9054,18 +9054,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C6" library="rcl" deviceset="C-US" device="C1206" value="0.1uF"/>
 <part name="C7" library="rcl" deviceset="C-US" device="C1206" value="0.1uF"/>
 <part name="C8" library="rcl" deviceset="C-US" device="C1206" value="0.1uF"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="M1206" value="170"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="M1206" value="1.8k"/>
 <part name="POWER" library="SparkFun-LED" deviceset="LED" device="3MM"/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
-<part name="R7" library="rcl" deviceset="R-US_" device="M1206" value="300"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="M1206" value="330"/>
 <part name="STATUS" library="SparkFun-LED" deviceset="LED" device="3MM"/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="RESET" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="U2" library="SparkFun" deviceset="FT232RL" device="SSOP"/>
-<part name="R1" library="rcl" deviceset="R-US_" device="M1206" value="280"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="M1206" value="315"/>
 <part name="TX" library="SparkFun-LED" deviceset="LED" device="3MM"/>
 <part name="RX" library="SparkFun-LED" deviceset="LED" device="3MM"/>
 <part name="U$3" library="SparkFun" deviceset="5V" device=""/>
@@ -9152,13 +9150,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="GND15" gate="1" x="73.66" y="134.62"/>
 <instance part="GND16" gate="1" x="12.7" y="187.96" rot="R180"/>
 <instance part="U2" gate="G$1" x="91.44" y="157.48"/>
-<instance part="R1" gate="G$1" x="147.32" y="167.64" rot="R90"/>
-<instance part="R2" gate="G$1" x="154.94" y="167.64" rot="R90"/>
 <instance part="TX" gate="G$1" x="147.32" y="157.48"/>
 <instance part="RX" gate="G$1" x="154.94" y="157.48"/>
-<instance part="U$3" gate="G$1" x="147.32" y="175.26"/>
+<instance part="U$3" gate="G$1" x="147.32" y="162.56"/>
 <instance part="U$4" gate="G$1" x="60.96" y="180.34"/>
-<instance part="U$5" gate="G$1" x="154.94" y="175.26"/>
+<instance part="U$5" gate="G$1" x="154.94" y="162.56"/>
 <instance part="U$6" gate="G$1" x="124.46" y="228.6"/>
 <instance part="U$7" gate="G$1" x="220.98" y="218.44"/>
 <instance part="U$8" gate="G$1" x="236.22" y="218.44"/>
@@ -10275,20 +10271,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="RX" gate="G$1" pin="C"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<wire x1="147.32" y1="162.56" x2="147.32" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="TX" gate="G$1" pin="A"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<wire x1="154.94" y1="162.56" x2="154.94" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="RX" gate="G$1" pin="A"/>
-</segment>
-</net>
 <net name="TXD" class="0">
 <segment>
 <label x="109.22" y="175.26" size="1.778" layer="95"/>
@@ -10321,16 +10303,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="76.2" y1="162.56" x2="60.96" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="162.56" x2="60.96" y2="167.64" width="0.1524" layer="91"/>
 <junction x="60.96" y="167.64"/>
-</segment>
-<segment>
-<wire x1="147.32" y1="175.26" x2="147.32" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="U$3" gate="G$1" pin="5V"/>
-</segment>
-<segment>
-<wire x1="154.94" y1="175.26" x2="154.94" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="U$5" gate="G$1" pin="5V"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="5V"/>
@@ -10435,6 +10407,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="U$18" gate="G$1" pin="5V"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="-121.92" x2="137.16" y2="-124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="147.32" y1="162.56" x2="147.32" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="TX" gate="G$1" pin="A"/>
+<pinref part="U$3" gate="G$1" pin="5V"/>
+</segment>
+<segment>
+<wire x1="154.94" y1="162.56" x2="154.94" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="RX" gate="G$1" pin="A"/>
+<pinref part="U$5" gate="G$1" pin="5V"/>
 </segment>
 </net>
 <net name="N$4" class="0">

@@ -44,7 +44,8 @@ void readAnalogs(void);
 // Global Variables
 uint8_t au8_LED_values[NUM_OF_LED_OUTS];
 uint8_t au8_PWM_values[NUM_OF_PWM_OUTS];
-uint8_t au8_SW_values[NUM_OF_SW_INS]; 
+//uint8_t au8_SW_values[NUM_OF_SW_INS]; 
+uint16_t u16_SW_values;
 uint8_t au8_ANA_values[NUM_OF_ANA_INS];
 uint8_t u8_StatusLED_value; 
 Servo servoOutputs[NUM_OF_PWM_OUTS];
@@ -114,11 +115,15 @@ void writePWMs(void)
 }
 
 // Read the switch values into au8_SW_values[].
-void readSwitches(void)
+uint16_t getSwitchMask(void)
 {
-  uint8_t u8_Switch_Index;
-  for(u8_Switch_Index = 0; u8_Switch_Index < NUM_OF_SW_INS; u8_Switch_Index++)
-    au8_SW_values[u8_Switch_Index] = digitalRead(u8_SW_Pins[u8_Switch_Index]);
+  uint8_t u8_Switch_Index = NUM_OF_SW_INS;
+  u16_SW_values = ((uint16_t) digitalRead(u8_SW_Pins[--u8_Switch_Index])) & 0x0001;
+  for(; u8_Switch_Index > 0; --u8_Switch_Index) {
+    u16_SW_values <<= 1;
+    u16_SW_values |= ((uint16_t) digitalRead(u8_SW_Pins[u8_Switch_Index])) & 0x0001;
+  }
+  return u16_SW_values;
 }
 
 // Read the analog values, convert to 8-bits, save in au8_ANA_values[]. 
@@ -127,15 +132,6 @@ void readAnalogs(void)
   uint8_t u8_Analog_Index;
   for(u8_Analog_Index = 0; u8_Analog_Index < NUM_OF_ANA_INS; u8_Analog_Index++)
     au8_ANA_values[u8_Analog_Index] = analogRead(u8_Analog_Pins[u8_Analog_Index]) >> 2; // >> 2 to go from 10 bit to 8 bit
-}
-
-// Update the hardware state.  This should be called after something has changed. 
-void updateHardware(void)
-{
-  writeLEDs();
-  writePWMs();
-  readSwitches();
-  readAnalogs();
 }
 
 // Performs a self-test, then sets the LED outputs off and returns the servos back to 0 degrees. 
@@ -218,41 +214,6 @@ void resetHardware(uint8_t u8_selfTest)
       au8_PWM_values[u8_PWM_Index] = 0; 
   writePWMs(); 
   
-  
-}
-
-// Sets a particular LED output to the state given by the u8_ledState parameter.
-void setLED(uint8_t u8_ledNum, uint8_t u8_ledState)
-{
-  if(u8_ledNum < NUM_OF_LED_OUTS)
-    au8_LED_values[u8_ledNum] = u8_ledState;
-  
-}
-
-// Sets a particlar PWM output to the value given by the u8_pwmAngle paramter.
-void setPWM(uint8_t u8_pwmNum, uint8_t u8_pwmAngle)
-{
-  if(u8_pwmNum < NUM_OF_PWM_OUTS)
-    au8_PWM_values[u8_pwmNum] = u8_pwmAngle;
-}
-
-// Returns the analog value of the analog input given by the u8_analogPin parameter.
-uint8_t getAnalog(uint8_t u8_analogPin)
-{
-  if(u8_analogPin < NUM_OF_ANA_INS)
-    return au8_ANA_values[u8_analogPin];
-  else
-    return 0;
-  
-}
-
-// Returns the switch value of the switch input given by the u8_switchPin parameter.
-uint8_t getSwitch(uint8_t u8_switchPin)
-{
-  if(u8_switchPin < NUM_OF_SW_INS)
-    return au8_SW_values[u8_switchPin];
-  else
-    return 0;
 }
 
 // Sets all the LEDs in the LED values array.
@@ -260,6 +221,7 @@ void setLEDArray(uint8_t *u8_ledStates, size_t arrayLength)
 {
   if(arrayLength == NUM_OF_LED_OUTS)
     memcpy(au8_LED_values,  u8_ledStates, NUM_OF_LED_OUTS);
+  writeLEDs();
 }
 
 // Sets all the PWMs in the PWM values array.
@@ -267,19 +229,14 @@ void setPWMArray(uint8_t *u8_pwmStates, size_t arrayLength)
 {
   if(arrayLength == NUM_OF_PWM_OUTS)
     memcpy(au8_PWM_values,  u8_pwmStates, NUM_OF_PWM_OUTS);
+  writePWMs();
 }
 
 // Gets all the analog inputs in the analog values array.
 void getAnalogArray(uint8_t *u8_analogValues, size_t arrayLength)
 {
+  readAnalogs();
   if(arrayLength == NUM_OF_ANA_INS)
     memcpy(u8_analogValues, au8_ANA_values, NUM_OF_ANA_INS);
-}
-
-// Gets all the switch inputs in the switch values array.
-void getSwitchArray(uint8_t *u8_switchValues, size_t arrayLength)
-{
-  if(arrayLength == NUM_OF_SW_INS)
-    memcpy(u8_switchValues, au8_SW_values, NUM_OF_SW_INS);
 }
 
