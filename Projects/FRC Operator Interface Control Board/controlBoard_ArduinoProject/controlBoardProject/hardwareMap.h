@@ -17,13 +17,14 @@ void resetHardware(uint8_t);
 void setStatusLED(uint8_t);
 void toggleStatusLED(void); 
 
-void setLED(uint8_t u8_ledNum, uint8_t u8_ledState);
-void setPWM(uint8_t u8_pwmNum, uint8_t u8_pwmAngle);
-uint8_t getAnalog(uint8_t u8_analogPin);
+void blankLEDs(void);
+void setLED(uint8_t, uint8_t);
+void setPWM(uint8_t, uint8_t);
+uint8_t getAnalog(uint8_t);
 
-void setLEDArray(uint8_t *u8_ledStates, size_t arrayLength);
-void setPWMArray(uint8_t *u8_pwmStates, size_t arrayLength);
-void getAnalogArray(uint8_t *u8_analogValues, size_t arrayLength);
+void setLEDs(uint16_t);
+void setPWMArray(uint8_t*, size_t);
+void getAnalogArray(uint8_t*, size_t);
 uint16_t getSwitchMask(void);
 
 #endif // HARDWARE_MAP_H
