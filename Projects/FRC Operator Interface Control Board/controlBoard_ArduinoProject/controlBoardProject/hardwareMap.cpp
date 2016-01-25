@@ -114,11 +114,11 @@ void setLEDs(uint16_t u16_ledMask) {
 uint16_t getSwitchMask(void)
 {
   uint8_t u8_Switch_Index = NUM_OF_SW_INS;
-  uint16_t u16_SW_values = ((uint16_t) digitalRead(u8_SW_Pins[--u8_Switch_Index])) & 0x0001;
-  for(; u8_Switch_Index > 0; --u8_Switch_Index) {
+  uint16_t u16_SW_values = (digitalRead(u8_SW_Pins[u8_Switch_Index--])? 0x0000:0x0001);
+  do {
     u16_SW_values <<= 1;
-    u16_SW_values |= ((uint16_t) digitalRead(u8_SW_Pins[u8_Switch_Index])) & 0x0001;
-  }
+    u16_SW_values |= (digitalRead(u8_SW_Pins[u8_Switch_Index])? 0x0000:0x0001);
+  } while(u8_Switch_Index-- != 0);
   return u16_SW_values;
 }
 

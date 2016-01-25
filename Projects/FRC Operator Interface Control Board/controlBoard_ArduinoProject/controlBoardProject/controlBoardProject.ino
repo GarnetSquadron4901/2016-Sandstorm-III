@@ -5,7 +5,7 @@
 #include "crc_8.h"
 #include <SoftwareSerial.h>
 
-#define SERIAL_BAUD     250000
+#define SERIAL_BAUD     115200
 #define SERIAL_TIMEOUT  500
 #define SERIAL_EOL      '\n'
 
