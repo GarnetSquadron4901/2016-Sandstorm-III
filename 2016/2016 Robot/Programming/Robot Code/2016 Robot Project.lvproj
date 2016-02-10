@@ -115,8 +115,8 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="Team Code" Type="Folder">
 			<Item Name="GRIP" Type="Folder">
-				<Item Name="Get GRIP Data.vi" Type="VI" URL="../../../../../../../ADIS16448-RoboRIO-Driver/trunk/LabVIEW/ADI MXP IMU/Get GRIP Data.vi"/>
-				<Item Name="GRIP Contours Report.ctl" Type="VI" URL="../../../../../../../ADIS16448-RoboRIO-Driver/trunk/LabVIEW/ADI MXP IMU/GRIP Contours Report.ctl"/>
+				<Item Name="Get GRIP Data.vi" Type="VI" URL="../Get GRIP Data.vi"/>
+				<Item Name="GRIP Contours Report.ctl" Type="VI" URL="../GRIP Contours Report.ctl"/>
 			</Item>
 			<Item Name="Joysticks" Type="Folder">
 				<Item Name="Joystick - Array to Cluster.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Joystick - Array to Cluster.vi"/>
