@@ -159,6 +159,8 @@ AddOutputFilter chunkFilter
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
+		<Item Name="Drive Base - Disable.vi" Type="VI" URL="../../Dashboard Code/Drive Base - Disable.vi"/>
+		<Item Name="Drive Base - IMU Set.vi" Type="VI" URL="../../Dashboard Code/Drive Base - IMU Set.vi"/>
 		<Item Name="Global Variables.vi" Type="VI" URL="../Global Variables.vi"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Set Arm.vi" Type="VI" URL="../Set Arm.vi"/>
