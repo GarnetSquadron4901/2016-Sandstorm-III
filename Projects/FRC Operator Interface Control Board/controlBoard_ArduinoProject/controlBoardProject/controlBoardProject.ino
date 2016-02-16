@@ -97,7 +97,7 @@ void printSensorString(void)
   // Convert Analog Values to String
   strcat(sensorStringBuffer, "ANA:");
   for(u8_i = 0; u8_i < NUM_OF_ANA_INS; u8_i++) {
-    utoa(getAnalog(u8_i), sz_value, VAL_STRING_LEN);
+    utoa(getAnalog(u8_i), sz_value, 10);
     strcat(sensorStringBuffer,  sz_value);
     
     if (u8_i < NUM_OF_ANA_INS-1)
