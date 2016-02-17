@@ -117,6 +117,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Arm" Type="Folder">
 				<Item Name="Arm Mode TypeDef.ctl" Type="VI" URL="../Arm Mode TypeDef.ctl"/>
 				<Item Name="Arm Notifier TypeDef.ctl" Type="VI" URL="../Arm Notifier TypeDef.ctl"/>
+				<Item Name="Set Arm.vi" Type="VI" URL="../Set Arm.vi"/>
 			</Item>
 			<Item Name="GRIP" Type="Folder">
 				<Item Name="Get GRIP Data.vi" Type="VI" URL="../Get GRIP Data.vi"/>
@@ -144,7 +145,9 @@ AddOutputFilter chunkFilter
 			<Item Name="Robot Drive" Type="Folder">
 				<Item Name="Drive Base - Arcade Set.vi" Type="VI" URL="../../Dashboard Code/Drive Base - Arcade Set.vi"/>
 				<Item Name="Drive Base - Controlled Mode - TypeDef.ctl" Type="VI" URL="../Drive Base - Controlled Mode - TypeDef.ctl"/>
+				<Item Name="Drive Base - Disable.vi" Type="VI" URL="../../Dashboard Code/Drive Base - Disable.vi"/>
 				<Item Name="Drive Base - GRIP Set.vi" Type="VI" URL="../Drive Base - GRIP Set.vi"/>
+				<Item Name="Drive Base - IMU Set.vi" Type="VI" URL="../../Dashboard Code/Drive Base - IMU Set.vi"/>
 				<Item Name="Drive Base - Update.vi" Type="VI" URL="../../Dashboard Code/Drive Base - Update.vi"/>
 				<Item Name="Drive Base Mode.ctl" Type="VI" URL="../Drive Base Mode.ctl"/>
 			</Item>
@@ -159,11 +162,8 @@ AddOutputFilter chunkFilter
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
-		<Item Name="Drive Base - Disable.vi" Type="VI" URL="../../Dashboard Code/Drive Base - Disable.vi"/>
-		<Item Name="Drive Base - IMU Set.vi" Type="VI" URL="../../Dashboard Code/Drive Base - IMU Set.vi"/>
 		<Item Name="Global Variables.vi" Type="VI" URL="../Global Variables.vi"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
-		<Item Name="Set Arm.vi" Type="VI" URL="../Set Arm.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
