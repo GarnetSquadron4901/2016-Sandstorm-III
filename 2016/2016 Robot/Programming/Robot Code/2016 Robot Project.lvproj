@@ -37,6 +37,20 @@
 				<Item Name="compatOpenFileOperation.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatOpenFileOperation.vi"/>
 				<Item Name="compatCalcOffset.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatCalcOffset.vi"/>
 				<Item Name="Write to XML File(array).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(array).vi"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="Read From XML File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File.vi"/>
+				<Item Name="Read From XML File(array).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File(array).vi"/>
+				<Item Name="ParseXMLFragments.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/ParseXMLFragments.vi"/>
+				<Item Name="FindFirstTag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/FindFirstTag.vi"/>
+				<Item Name="FindEmptyElement.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/FindEmptyElement.vi"/>
+				<Item Name="FindElement.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/FindElement.vi"/>
+				<Item Name="FindMatchingCloseTag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/FindMatchingCloseTag.vi"/>
+				<Item Name="FindCloseTagByName.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/FindCloseTagByName.vi"/>
+				<Item Name="FindElementStartByName.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/FindElementStartByName.vi"/>
+				<Item Name="Read From XML File(string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File(string).vi"/>
 			</Item>
 			<Item Name="Robot Parameters.ctl" Type="VI" URL="../Robot Parameters.ctl"/>
 		</Item>
@@ -125,6 +139,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Support Code" Type="Folder">
 			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
 			<Item Name="Falling Edge Detector.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Falling Edge Detector.vi"/>
+			<Item Name="Load Robot Parameters.vi" Type="VI" URL="../Load Robot Parameters.vi"/>
 			<Item Name="Map.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Map.vi"/>
 			<Item Name="Rising Edge Detector.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Rising Edge Detector.vi"/>
 		</Item>
@@ -159,7 +174,7 @@ AddOutputFilter chunkFilter
 					<Item Name="OICB - Get Analog.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/OICB - Get Analog.vi"/>
 					<Item Name="OICB - Get Switches.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/OICB - Get Switches.vi"/>
 					<Item Name="OICB - Set LED&apos;s.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/OICB - Set LED&apos;s.vi"/>
-					<Item Name="OICB-Set PWM.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/OICB-Set PWM.vi"/>
+					<Item Name="OICB - Set PWM.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/OICB - Set PWM.vi"/>
 					<Item Name="PWM_Output_TypeDef.ctl" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/PWM_Output_TypeDef.ctl"/>
 					<Item Name="Switch_Input_TypeDef.ctl" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Switch_Input_TypeDef.ctl"/>
 				</Item>
@@ -177,11 +192,11 @@ AddOutputFilter chunkFilter
 					<Item Name="REV Robotics Analog Pressure Sensor - Voltage to Pressure.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/REV Robotics Analog Pressure Sensor - Voltage to Pressure.vi"/>
 					<Item Name="Shooter Control.ctl" Type="VI" URL="../Shooter Control.ctl"/>
 				</Item>
-				<Item Name="Teleop" Type="Folder">
-					<Item Name="Teleop - Reverse Drivebase Orientation.vi" Type="VI" URL="../Teleop - Reverse Drivebase Orientation.vi"/>
-					<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
-				</Item>
 				<Item Name="Periodic Tasks.vi" Type="VI" URL="../Periodic Tasks.vi"/>
+			</Item>
+			<Item Name="Teleop" Type="Folder">
+				<Item Name="Teleop - Reverse Drivebase Orientation.vi" Type="VI" URL="../Teleop - Reverse Drivebase Orientation.vi"/>
+				<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 			</Item>
 			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
 			<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
@@ -192,7 +207,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 		</Item>
 		<Item Name="Global Variables.vi" Type="VI" URL="../Global Variables.vi"/>
-		<Item Name="Load Robot Parameters.vi" Type="VI" URL="../Load Robot Parameters.vi"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Robot Parameters.ctl" Type="VI" URL="../Robot Parameters.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -817,7 +831,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6782B190-04E1-4A41-93AB-3F357B35791E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
