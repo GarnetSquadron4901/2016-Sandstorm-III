@@ -205,6 +205,9 @@
 				<Item Name="IMAQ AVI2 Open" Type="VI" URL="/&lt;vilib&gt;/vision/Avi.llb/IMAQ AVI2 Open"/>
 				<Item Name="WPI_DashboardVIdeo Path for Read.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Dashboard/WPI_DashboardVIdeo Path for Read.vi"/>
 				<Item Name="WPI_CameraRead MJPG for Dashboard.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraRead MJPG for Dashboard.vi"/>
+				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
+				<Item Name="IMAQ Overlay Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Rectangle"/>
+				<Item Name="IMAQ Overlay Text" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Text"/>
 			</Item>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -238,6 +241,8 @@
 			<Item Name="BB_CameraMJPG-StreamerRead.vi" Type="VI" URL="../../../../../../../../Users/Developer/Downloads/BB_LabVIEW_MJPG-Streamer/BB_CameraMJPG-StreamerRead.vi"/>
 			<Item Name="BB_CameraIssue HTTP Request from MJPG-Streamer.vi" Type="VI" URL="../../../../../../../../Users/Developer/Downloads/BB_LabVIEW_MJPG-Streamer/BB_CameraIssue HTTP Request from MJPG-Streamer.vi"/>
 			<Item Name="BB_DashboardFPS Calculator.vi" Type="VI" URL="../../../../../../../../Users/Developer/Downloads/BB_LabVIEW_MJPG-Streamer/BB_DashboardFPS Calculator.vi"/>
+			<Item Name="GRIP Contours Report.ctl" Type="VI" URL="../../Robot Code/GRIP Contours Report.ctl"/>
+			<Item Name="Get GRIP Data.vi" Type="VI" URL="../../Robot Code/Get GRIP Data.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC_Dashboard" Type="EXE">
