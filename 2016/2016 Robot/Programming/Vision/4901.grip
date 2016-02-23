@@ -9,8 +9,8 @@
       <grip:Input step="0" socket="0"/>
       <grip:Input step="0" socket="1">
         <value>
-          <double>72.84387468068486</double>
-          <double>110.88737201365187</double>
+          <double>114.93040837733048</double>
+          <double>159.8685947372329</double>
         </value>
       </grip:Input>
       <grip:Input step="0" socket="2">
@@ -22,7 +22,7 @@
       <grip:Input step="0" socket="3">
         <value>
           <double>66.76831234740426</double>
-          <double>255.0</double>
+          <double>196.2542662116041</double>
         </value>
       </grip:Input>
       <grip:Output step="0" socket="0" previewed="true"/>
@@ -37,7 +37,7 @@
     <grip:Step name="Filter Contours">
       <grip:Input step="2" socket="0"/>
       <grip:Input step="2" socket="1">
-        <value>150.0</value>
+        <value>100.0</value>
       </grip:Input>
       <grip:Input step="2" socket="2">
         <value>0.0</value>

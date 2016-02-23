@@ -101,7 +101,7 @@
 </Cluster>
 <Cluster>
 <Name>Arm Parameters</Name>
-<NumElts>9</NumElts>
+<NumElts>10</NumElts>
 <Cluster>
 <Name>PID gains</Name>
 <NumElts>3</NumElts>
@@ -120,11 +120,11 @@
 </Cluster>
 <DBL>
 <Name>Arm Max Angle</Name>
-<Val>180.00000000000000</Val>
+<Val>197.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Arm Min Angle</Name>
-<Val>90.00000000000000</Val>
+<Val>91.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Default Angle</Name>
@@ -132,11 +132,11 @@
 </DBL>
 <DBL>
 <Name>Shoot Batter Angle</Name>
-<Val>135.00000000000000</Val>
+<Val>164.75000000000000</Val>
 </DBL>
 <DBL>
 <Name>Shoot Close Angle</Name>
-<Val>135.00000000000000</Val>
+<Val>148.50000000000000</Val>
 </DBL>
 <DBL>
 <Name>Shoot Far Angle</Name>
@@ -144,23 +144,43 @@
 </DBL>
 <DBL>
 <Name>Human Player Load Angle</Name>
-<Val>135.00000000000000</Val>
+<Val>188.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Low Bar / Goal Angle</Name>
-<Val>135.00000000000000</Val>
+<Val>89.00000000000000</Val>
 </DBL>
+<Cluster>
+<Name>Arm Position Sensor Map</Name>
+<NumElts>4</NumElts>
+<DBL>
+<Name>Input Low (V)</Name>
+<Val>1.22314000000000</Val>
+</DBL>
+<DBL>
+<Name>Input High (V)</Name>
+<Val>3.35693000000000</Val>
+</DBL>
+<DBL>
+<Name>Output Low (Degree)</Name>
+<Val>197.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Output High (Degree)</Name>
+<Val>91.00000000000000</Val>
+</DBL>
+</Cluster>
 </Cluster>
 <Cluster>
 <Name>Intake Parameters</Name>
 <NumElts>2</NumElts>
 <DBL>
 <Name>Suck In Speed</Name>
-<Val>0.50000000000000</Val>
+<Val>-0.50000000000000</Val>
 </DBL>
 <DBL>
 <Name>Spit Out Speed</Name>
-<Val>-1.00000000000000</Val>
+<Val>1.00000000000000</Val>
 </DBL>
 </Cluster>
 </Cluster>
