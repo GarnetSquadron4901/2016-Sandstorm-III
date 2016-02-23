@@ -16,25 +16,9 @@
 </EW>
 <Cluster>
 <Name>Drive PID Gains</Name>
-<NumElts>4</NumElts>
+<NumElts>3</NumElts>
 <Cluster>
 <Name>GRIP - Centering</Name>
-<NumElts>3</NumElts>
-<DBL>
-<Name>proportional gain (Kc)</Name>
-<Val>0.00000000000000</Val>
-</DBL>
-<DBL>
-<Name>integral time (Ti, min)</Name>
-<Val>0.00000000000000</Val>
-</DBL>
-<DBL>
-<Name>derivative time (Td, min)</Name>
-<Val>0.00000000000000</Val>
-</DBL>
-</Cluster>
-<Cluster>
-<Name>GRIP - Area</Name>
 <NumElts>3</NumElts>
 <DBL>
 <Name>proportional gain (Kc)</Name>
@@ -85,7 +69,7 @@
 </Cluster>
 <Cluster>
 <Name>Shooter Parameters</Name>
-<NumElts>3</NumElts>
+<NumElts>4</NumElts>
 <U32>
 <Name>Open Claw Delay</Name>
 <Val>200</Val>
@@ -98,16 +82,20 @@
 <Name>Pressure Threshold for shooting</Name>
 <Val>75.00000000000000</Val>
 </DBL>
+<DBL>
+<Name>Arm Position Interlock Angle</Name>
+<Val>120.00000000000000</Val>
+</DBL>
 </Cluster>
 <Cluster>
 <Name>Arm Parameters</Name>
-<NumElts>10</NumElts>
+<NumElts>11</NumElts>
 <Cluster>
 <Name>PID gains</Name>
 <NumElts>3</NumElts>
 <DBL>
 <Name>proportional gain (Kc)</Name>
-<Val>0.00000000000000</Val>
+<Val>0.10000000000000</Val>
 </DBL>
 <DBL>
 <Name>integral time (Ti, min)</Name>
@@ -124,7 +112,7 @@
 </DBL>
 <DBL>
 <Name>Arm Min Angle</Name>
-<Val>91.00000000000000</Val>
+<Val>89.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Default Angle</Name>
@@ -144,7 +132,7 @@
 </DBL>
 <DBL>
 <Name>Human Player Load Angle</Name>
-<Val>188.00000000000000</Val>
+<Val>189.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Low Bar / Goal Angle</Name>
@@ -170,6 +158,10 @@
 <Val>91.00000000000000</Val>
 </DBL>
 </Cluster>
+<DBL>
+<Name>Arm Position Tolerance</Name>
+<Val>3.00000000000000</Val>
+</DBL>
 </Cluster>
 <Cluster>
 <Name>Intake Parameters</Name>
