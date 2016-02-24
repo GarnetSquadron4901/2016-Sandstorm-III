@@ -140,11 +140,11 @@
 </DBL>
 <DBL>
 <Name>Low Bar / Goal Angle</Name>
-<Val>89.00000000000000</Val>
+<Val>0.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Driver - Cross Defense Angle</Name>
-<Val>100.00000000000000</Val>
+<Val>89.00000000000000</Val>
 </DBL>
 <Cluster>
 <Name>Arm Position Sensor Map</Name>

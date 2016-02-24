@@ -53,6 +53,7 @@
 				<Item Name="Read From XML File(string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Read From XML File(string).vi"/>
 			</Item>
 			<Item Name="Robot Parameters.ctl" Type="VI" URL="../Robot Parameters.ctl"/>
+			<Item Name="Arm Mode TypeDef.ctl" Type="VI" URL="../Arm Mode TypeDef.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -144,6 +145,11 @@ AddOutputFilter chunkFilter
 			<Item Name="Rising Edge Detector.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Rising Edge Detector.vi"/>
 		</Item>
 		<Item Name="Team Code" Type="Folder">
+			<Item Name="Autonomous" Type="Folder">
+				<Item Name="Autonomous - Get Mode.vi" Type="VI" URL="../Autonomous - Get Mode.vi"/>
+				<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
+				<Item Name="Autonomous Mode.ctl" Type="VI" URL="../Autonomous Mode.ctl"/>
+			</Item>
 			<Item Name="Joysticks" Type="Folder">
 				<Item Name="Joystick - Array to Cluster.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Joystick - Array to Cluster.vi"/>
 				<Item Name="Joystick - Begin All.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Joystick - Begin All.vi"/>
@@ -187,6 +193,10 @@ AddOutputFilter chunkFilter
 					<Item Name="Drive Base - Tank Set.vi" Type="VI" URL="../../Dashboard Code/Drive Base - Tank Set.vi"/>
 					<Item Name="Drive Base - Update.vi" Type="VI" URL="../../Dashboard Code/Drive Base - Update.vi"/>
 					<Item Name="Drive Base Mode.ctl" Type="VI" URL="../Drive Base Mode.ctl"/>
+					<Item Name="Slew Rate - Drive.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Slew Rate - Drive.vi"/>
+					<Item Name="WPI_RobotDriveArcadeDrive_Standard(SlewRateLimited).vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/WPI_RobotDriveArcadeDrive_Standard(SlewRateLimited).vi"/>
+					<Item Name="WPI_RobotDriveArcadeDrive_Standard_SlewRateControl.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/WPI_RobotDriveArcadeDrive_Standard_SlewRateControl.vi"/>
+					<Item Name="WPI_RobotDriveTankDrive_SlewRateControl.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/WPI_RobotDriveTankDrive_SlewRateControl.vi"/>
 				</Item>
 				<Item Name="Shooter" Type="Folder">
 					<Item Name="REV Robotics Analog Pressure Sensor - Voltage to Pressure.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/REV Robotics Analog Pressure Sensor - Voltage to Pressure.vi"/>
@@ -195,10 +205,10 @@ AddOutputFilter chunkFilter
 				<Item Name="Periodic Tasks.vi" Type="VI" URL="../Periodic Tasks.vi"/>
 			</Item>
 			<Item Name="Teleop" Type="Folder">
+				<Item Name="Teleop - Apply Speed Reduction.vi" Type="VI" URL="../Teleop - Apply Speed Reduction.vi"/>
 				<Item Name="Teleop - Reverse Drivebase Orientation.vi" Type="VI" URL="../Teleop - Reverse Drivebase Orientation.vi"/>
 				<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 			</Item>
-			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
 			<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
 			<Item Name="Device Refnums.ctl" Type="VI" URL="../Device Refnums.ctl"/>
 			<Item Name="Disabled.vi" Type="VI" URL="../Disabled.vi"/>
@@ -206,8 +216,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Robot Global Data.vi" Type="VI" URL="../Robot Global Data.vi"/>
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 		</Item>
-		<Item Name="Autonomous - Get Mode.vi" Type="VI" URL="../Autonomous - Get Mode.vi"/>
-		<Item Name="Autonomous Mode.ctl" Type="VI" URL="../Autonomous Mode.ctl"/>
 		<Item Name="Global Variables.vi" Type="VI" URL="../Global Variables.vi"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Robot Parameters.ctl" Type="VI" URL="../Robot Parameters.ctl"/>
@@ -643,13 +651,11 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_InterruptRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Interrupt/WPI_InterruptRef.ctl"/>
 				<Item Name="WPI_InterruptWait.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Interrupt/WPI_InterruptWait.vi"/>
 				<Item Name="WPI_JoystickArcadeMapping.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickArcadeMapping.vi"/>
-				<Item Name="WPI_JoystickButtonSpinMapping.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickButtonSpinMapping.vi"/>
 				<Item Name="WPI_JoystickClose.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickClose.vi"/>
 				<Item Name="WPI_JoystickDeviceEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickDeviceEnum.ctl"/>
 				<Item Name="WPI_JoystickDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickDevRef.ctl"/>
 				<Item Name="WPI_JoystickGetValues.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickGetValues.vi"/>
 				<Item Name="WPI_JoystickOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickOpen.vi"/>
-				<Item Name="WPI_JoystickRatioCurveMapping.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickRatioCurveMapping.vi"/>
 				<Item Name="WPI_JoystickRefNum Registry Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickRefNum Registry Get.vi"/>
 				<Item Name="WPI_JoystickRefNum Registry Set.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickRefNum Registry Set.vi"/>
 				<Item Name="WPI_JoystickTankMapping.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickTankMapping.vi"/>
@@ -711,10 +717,6 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_PWMSetValue.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/PWM/WPI_PWMSetValue.vi"/>
 				<Item Name="WPI_PWMToDigitalModule.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/PWM/WPI_PWMToDigitalModule.vi"/>
 				<Item Name="WPI_ReserveFilterResource.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalInput/Filter/WPI_ReserveFilterResource.vi"/>
-				<Item Name="WPI_RobotDriveArcadeDrive.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveArcadeDrive.vi"/>
-				<Item Name="WPI_RobotDriveArcadeDrive_ButtonSpin.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveArcadeDrive_ButtonSpin.vi"/>
-				<Item Name="WPI_RobotDriveArcadeDrive_RatioCurve.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveArcadeDrive_RatioCurve.vi"/>
-				<Item Name="WPI_RobotDriveArcadeDrive_Standard(NoSaturation).vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveArcadeDrive_Standard(NoSaturation).vi"/>
 				<Item Name="WPI_RobotDriveClose.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveClose.vi"/>
 				<Item Name="WPI_RobotDriveDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveDevRef.ctl"/>
 				<Item Name="WPI_RobotDriveDoesDevRefExist.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveDoesDevRefExist.vi"/>
@@ -741,7 +743,6 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_RobotDriveSafetyError.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveSafetyError.vi"/>
 				<Item Name="WPI_RobotDriveSafetyTest.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveSafetyTest.vi"/>
 				<Item Name="WPI_RobotDriveSafetyUpdate.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveSafetyUpdate.vi"/>
-				<Item Name="WPI_RobotDriveTankDrive.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/RobotDrive/WPI_RobotDriveTankDrive.vi"/>
 				<Item Name="WPI_SafetyOutputCheckMenu.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SafetyOutput/WPI_SafetyOutputCheckMenu.ctl"/>
 				<Item Name="WPI_SafetyOutputConfigMenu.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SafetyOutput/WPI_SafetyOutputConfigMenu.ctl"/>
 				<Item Name="WPI_SafetyOutputEngine.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SafetyOutput/WPI_SafetyOutputEngine.vi"/>
@@ -830,6 +831,7 @@ AddOutputFilter chunkFilter
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Slew Rate.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Slew Rate.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
