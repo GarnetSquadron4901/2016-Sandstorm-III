@@ -68,7 +68,7 @@
 </Cluster>
 <DBL>
 <Name>Slew Rate (Units / Second)</Name>
-<Val>0.00000000000000</Val>
+<Val>4.00000000000000</Val>
 </DBL>
 </Cluster>
 <Cluster>
@@ -124,23 +124,23 @@
 </DBL>
 <DBL>
 <Name>Shoot Batter Angle</Name>
-<Val>164.75000000000000</Val>
+<Val>163.88999999999999</Val>
 </DBL>
 <DBL>
 <Name>Shoot Close Angle</Name>
-<Val>148.50000000000000</Val>
+<Val>146.91100000000000</Val>
 </DBL>
 <DBL>
 <Name>Shoot Far Angle</Name>
-<Val>135.00000000000000</Val>
+<Val>133.69100000000000</Val>
 </DBL>
 <DBL>
 <Name>Human Player Load Angle</Name>
-<Val>189.00000000000000</Val>
+<Val>190.38999999999999</Val>
 </DBL>
 <DBL>
 <Name>Low Bar / Goal Angle</Name>
-<Val>89.00000000000000</Val>
+<Val>89.72640000000000</Val>
 </DBL>
 <DBL>
 <Name>Driver - Cross Defense Angle</Name>

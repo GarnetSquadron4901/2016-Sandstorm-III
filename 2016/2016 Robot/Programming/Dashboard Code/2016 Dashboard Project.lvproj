@@ -240,7 +240,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/FRC_Dashboard/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Support/App EXE.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{32733DAB-8230-4D89-8300-4F1ACE7201AC}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{ED5EBE98-44B8-42B1-85B9-56518AB3242E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Support/Panel Resized.vi</Property>
