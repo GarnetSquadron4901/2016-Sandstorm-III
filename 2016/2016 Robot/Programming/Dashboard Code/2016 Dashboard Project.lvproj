@@ -216,6 +216,7 @@
 			<Item Name="BB_DashboardFPS Calculator.vi" Type="VI" URL="../../../../../../../../Users/Developer/Downloads/BB_LabVIEW_MJPG-Streamer/BB_DashboardFPS Calculator.vi"/>
 			<Item Name="GRIP Contours Report.ctl" Type="VI" URL="../../Robot Code/GRIP Contours Report.ctl"/>
 			<Item Name="Get GRIP Data.vi" Type="VI" URL="../../Robot Code/Get GRIP Data.vi"/>
+			<Item Name="Autonomous Mode.ctl" Type="VI" URL="../../Robot Code/Autonomous Mode.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC_Dashboard" Type="EXE">

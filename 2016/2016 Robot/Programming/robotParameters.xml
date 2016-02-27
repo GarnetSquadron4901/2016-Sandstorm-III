@@ -6,7 +6,7 @@
 <NumElts>4</NumElts>
 <Cluster>
 <Name>Robot Drive Parameters</Name>
-<NumElts>3</NumElts>
+<NumElts>4</NumElts>
 <EW>
 <Name>Teleop Drive Mode</Name>
 <Choice>Split Axis Arcade</Choice>
@@ -68,7 +68,11 @@
 </Cluster>
 <DBL>
 <Name>Slew Rate (Units / Second)</Name>
-<Val>4.00000000000000</Val>
+<Val>3.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Auto Arm Up Speed (in/s)</Name>
+<Val>360.00000000000000</Val>
 </DBL>
 </Cluster>
 <Cluster>
@@ -124,23 +128,23 @@
 </DBL>
 <DBL>
 <Name>Shoot Batter Angle</Name>
-<Val>163.88999999999999</Val>
+<Val>159.19999999999999</Val>
 </DBL>
 <DBL>
 <Name>Shoot Close Angle</Name>
-<Val>146.91100000000000</Val>
+<Val>152.30000000000001</Val>
 </DBL>
 <DBL>
 <Name>Shoot Far Angle</Name>
-<Val>133.69100000000000</Val>
+<Val>120.90000000000001</Val>
 </DBL>
 <DBL>
 <Name>Human Player Load Angle</Name>
-<Val>190.38999999999999</Val>
+<Val>193.50000000000000</Val>
 </DBL>
 <DBL>
 <Name>Low Bar / Goal Angle</Name>
-<Val>89.72640000000000</Val>
+<Val>89.20000000000000</Val>
 </DBL>
 <DBL>
 <Name>Driver - Cross Defense Angle</Name>
@@ -151,15 +155,15 @@
 <NumElts>4</NumElts>
 <DBL>
 <Name>Input Low (V)</Name>
-<Val>1.22314000000000</Val>
+<Val>1.60278300000000</Val>
 </DBL>
 <DBL>
 <Name>Input High (V)</Name>
-<Val>3.35693000000000</Val>
+<Val>3.78417900000000</Val>
 </DBL>
 <DBL>
 <Name>Output Low (Degree)</Name>
-<Val>197.00000000000000</Val>
+<Val>200.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Output High (Degree)</Name>
@@ -172,7 +176,7 @@
 </DBL>
 <Array>
 <Name>Disable Lock Modes</Name>
-<Dimsize>1</Dimsize>
+<Dimsize>3</Dimsize>
 <EW>
 <Name>y</Name>
 <Choice>Unknown</Choice>
@@ -180,11 +184,37 @@
 <Choice>Locked</Choice>
 <Choice>Shoot Batter</Choice>
 <Choice>Shoot Close</Choice>
-<Choice>Shoot Far</Choice>
+<Choice>Cross Defense</Choice>
 <Choice>Human Player Load</Choice>
 <Choice>Low Bar / Goal</Choice>
 <Choice>Manual</Choice>
 <Val>8</Val>
+</EW>
+<EW>
+<Name>y</Name>
+<Choice>Unknown</Choice>
+<Choice>Disabled</Choice>
+<Choice>Locked</Choice>
+<Choice>Shoot Batter</Choice>
+<Choice>Shoot Close</Choice>
+<Choice>Cross Defense</Choice>
+<Choice>Human Player Load</Choice>
+<Choice>Low Bar / Goal</Choice>
+<Choice>Manual</Choice>
+<Val>7</Val>
+</EW>
+<EW>
+<Name>y</Name>
+<Choice>Unknown</Choice>
+<Choice>Disabled</Choice>
+<Choice>Locked</Choice>
+<Choice>Shoot Batter</Choice>
+<Choice>Shoot Close</Choice>
+<Choice>Cross Defense</Choice>
+<Choice>Human Player Load</Choice>
+<Choice>Low Bar / Goal</Choice>
+<Choice>Manual</Choice>
+<Val>3</Val>
 </EW>
 </Array>
 </Cluster>
