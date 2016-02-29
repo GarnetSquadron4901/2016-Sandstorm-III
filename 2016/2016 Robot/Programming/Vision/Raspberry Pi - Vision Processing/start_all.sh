@@ -6,7 +6,7 @@
 python /home/pi/leds/set_error_color.py 255 0 0
 python /home/pi/leds/set_load_color.py 0 255 0
 python /home/pi/leds/set_completed_color.py 0 255 0
-python /home/pi/leds/set_running_color.py 0 255 255
+python /home/pi/leds/set_running_color.py 0 255 0
 sudo python /home/pi/leds/set_progress.py 0
 python /home/pi/leds/run.py
 
