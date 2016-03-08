@@ -216,9 +216,13 @@ AddOutputFilter chunkFilter
 			<Item Name="Robot Global Data.vi" Type="VI" URL="../Robot Global Data.vi"/>
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 		</Item>
+		<Item Name="Convert Arm Setting String to Parameters.vi" Type="VI" URL="../Convert Arm Setting String to Parameters.vi"/>
+		<Item Name="Get Arm Setpoint from Enum.vi" Type="VI" URL="../Get Arm Setpoint from Enum.vi"/>
+		<Item Name="Get NT PID Parameter.vi" Type="VI" URL="../Get NT PID Parameter.vi"/>
 		<Item Name="Global Variables.vi" Type="VI" URL="../Global Variables.vi"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Robot Parameters.ctl" Type="VI" URL="../Robot Parameters.ctl"/>
+		<Item Name="Round to Nearest.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Round to Nearest.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
