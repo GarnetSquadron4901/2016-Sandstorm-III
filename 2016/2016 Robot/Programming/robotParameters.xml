@@ -120,7 +120,7 @@
 </DBL>
 <DBL>
 <Name>Arm Min Angle</Name>
-<Val>89.00000000000000</Val>
+<Val>88.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Default Angle</Name>
@@ -128,7 +128,7 @@
 </DBL>
 <DBL>
 <Name>Shoot Batter Angle</Name>
-<Val>159.19999999999999</Val>
+<Val>158.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Shoot Close Angle</Name>
@@ -140,11 +140,11 @@
 </DBL>
 <DBL>
 <Name>Human Player Load Angle</Name>
-<Val>193.50000000000000</Val>
+<Val>188.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Low Bar / Goal Angle</Name>
-<Val>89.20000000000000</Val>
+<Val>88.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Driver - Cross Defense Angle</Name>
@@ -155,19 +155,19 @@
 <NumElts>4</NumElts>
 <DBL>
 <Name>Input Low (V)</Name>
-<Val>1.60278300000000</Val>
+<Val>1.69311500000000</Val>
 </DBL>
 <DBL>
 <Name>Input High (V)</Name>
-<Val>3.78417900000000</Val>
+<Val>3.96850500000000</Val>
 </DBL>
 <DBL>
 <Name>Output Low (Degree)</Name>
-<Val>200.00000000000000</Val>
+<Val>89.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Output High (Degree)</Name>
-<Val>91.00000000000000</Val>
+<Val>200.00000000000000</Val>
 </DBL>
 </Cluster>
 <DBL>
@@ -176,7 +176,7 @@
 </DBL>
 <Array>
 <Name>Disable Lock Modes</Name>
-<Dimsize>3</Dimsize>
+<Dimsize>6</Dimsize>
 <EW>
 <Name>y</Name>
 <Choice>Unknown</Choice>
@@ -201,7 +201,46 @@
 <Choice>Human Player Load</Choice>
 <Choice>Low Bar / Goal</Choice>
 <Choice>Manual</Choice>
+<Val>4</Val>
+</EW>
+<EW>
+<Name>y</Name>
+<Choice>Unknown</Choice>
+<Choice>Disabled</Choice>
+<Choice>Locked</Choice>
+<Choice>Shoot Batter</Choice>
+<Choice>Shoot Close</Choice>
+<Choice>Cross Defense</Choice>
+<Choice>Human Player Load</Choice>
+<Choice>Low Bar / Goal</Choice>
+<Choice>Manual</Choice>
+<Val>5</Val>
+</EW>
+<EW>
+<Name>y</Name>
+<Choice>Unknown</Choice>
+<Choice>Disabled</Choice>
+<Choice>Locked</Choice>
+<Choice>Shoot Batter</Choice>
+<Choice>Shoot Close</Choice>
+<Choice>Cross Defense</Choice>
+<Choice>Human Player Load</Choice>
+<Choice>Low Bar / Goal</Choice>
+<Choice>Manual</Choice>
 <Val>7</Val>
+</EW>
+<EW>
+<Name>y</Name>
+<Choice>Unknown</Choice>
+<Choice>Disabled</Choice>
+<Choice>Locked</Choice>
+<Choice>Shoot Batter</Choice>
+<Choice>Shoot Close</Choice>
+<Choice>Cross Defense</Choice>
+<Choice>Human Player Load</Choice>
+<Choice>Low Bar / Goal</Choice>
+<Choice>Manual</Choice>
+<Val>6</Val>
 </EW>
 <EW>
 <Name>y</Name>
