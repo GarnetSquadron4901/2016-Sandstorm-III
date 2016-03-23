@@ -1,4 +1,4 @@
-#2016 Robot Code - FIRST Robotics Team 4901 - Garnet Squadron
+#2016 Robot Code - Sandstorm III - FIRST Robotics Team 4901 - Garnet Squadron
 
 ## Languages
 - Robot - LabVIEW
@@ -27,7 +27,7 @@
 - [Custom operator interface](https://github.com/GarnetSquardon4901/Operator-Interface-Control-Board)
 
 ## Checkout Process
-To check out the Sand Storm III repository, simply download the [update.bat](https://github.com/GarnetSquardon4901/2016-Sand-Storm-III/raw/master/update.bat) and run it.
+To check out the Sandstorm III repository, simply download the [update.bat](https://github.com/GarnetSquardon4901/2016-Sand-Storm-III/raw/master/update.bat) and run it.
 
-You'll need to install TortoiseSVN v1.8.x from [SourceForge](https://sourceforge.net/projects/tortoisesvn/files/). Newer versions (such as v1.9) don't work with the LabVIEW Plugin TSVN.
+You'll need to install TortoiseSVN v1.8.x from [SourceForge](https://sourceforge.net/projects/tortoisesvn/files/). Newer versions (such as v1.9) don't work with the LabVIEW Plugin TSVN. Be sure to install the option for Command line tools. 
 
