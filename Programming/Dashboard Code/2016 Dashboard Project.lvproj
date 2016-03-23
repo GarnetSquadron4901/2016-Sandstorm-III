@@ -20,7 +20,6 @@
 			<Item Name="Panel Resized.vi" Type="VI" URL="../Panel Resized.vi"/>
 			<Item Name="Adjust Dashboard Window.vi" Type="VI" URL="../Adjust Dashboard Window.vi"/>
 		</Item>
-		<Item Name="Robot Communication Loop.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Robot Communication Loop.vi"/>
 		<Item Name="Dashboard Main.vi" Type="VI" URL="../Dashboard Main.vi"/>
 		<Item Name="no-camera.jpg" Type="Document" URL="../no-camera.jpg"/>
 		<Item Name="Image to String.vi" Type="VI" URL="../Image to String.vi"/>
@@ -82,7 +81,6 @@
 				<Item Name="NT Read Numeric Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Read Numeric Array.vi"/>
 				<Item Name="NT Read Raw.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Read Raw.vi"/>
 				<Item Name="Cached Name Lookup.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Cached Name Lookup.vi"/>
-				<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
 				<Item Name="NT Write Raw.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Raw.vi"/>
 				<Item Name="NT Write String Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write String Array.vi"/>
 				<Item Name="NT Write Numeric Array.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Write Numeric Array.vi"/>
@@ -186,10 +184,7 @@
 				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
 				<Item Name="IMAQ Flatten Image to String" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Flatten Image to String"/>
-				<Item Name="WPI_CameraDecodeJPEGString.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraDecodeJPEGString.vi"/>
-				<Item Name="WPI_CameraERRFailedComm.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraERRFailedComm.vi"/>
-				<Item Name="WPI_UtilitiesFRC Build Error.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesFRC Build Error.vi"/>
-				<Item Name="WPI_CameraERRAccountProblem.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraERRAccountProblem.vi"/>
+				<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
 			</Item>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -198,37 +193,34 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="DStoPCPacketTypeDef.ctl" Type="VI" URL="../DStoPCPacketTypeDef.ctl"/>
-			<Item Name="Control Board - Open.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Control Board - Open.vi"/>
-			<Item Name="Inline CRC-8-CCITT &amp; CRC-8-Maxim.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Inline CRC-8-CCITT &amp; CRC-8-Maxim.vi"/>
-			<Item Name="CRC-8-Maxim 1-Wire (DOW).vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Wrappers/CRC-8-Maxim 1-Wire (DOW).vi"/>
-			<Item Name="Inline CRC-32.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Inline CRC-32.vi"/>
-			<Item Name="Inline CRC-16-CCITT.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Inline CRC-16-CCITT.vi"/>
-			<Item Name="CRC-16-CCITT-xMODEM.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Wrappers/CRC-16-CCITT-xMODEM.vi"/>
-			<Item Name="CRC-16-CCITT-0xFFFF.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Wrappers/CRC-16-CCITT-0xFFFF.vi"/>
-			<Item Name="CRC-16-CCITT-0x1D0F.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Wrappers/CRC-16-CCITT-0x1D0F.vi"/>
-			<Item Name="CRC-8-CCITT.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Wrappers/CRC-8-CCITT.vi"/>
-			<Item Name="Inline CRC.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Inline CRC/Inline CRC.vi"/>
-			<Item Name="Get Substrings &amp; Calculate CRC.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Get Substrings &amp; Calculate CRC.vi"/>
-			<Item Name="Analog_Input_TypeDef.ctl" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Analog_Input_TypeDef.ctl"/>
-			<Item Name="Switch_Input_TypeDef.ctl" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Switch_Input_TypeDef.ctl"/>
-			<Item Name="Control Board - Read.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Control Board - Read.vi"/>
-			<Item Name="PWM_Output_TypeDef.ctl" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/PWM_Output_TypeDef.ctl"/>
-			<Item Name="LED_Output_TypeDef.ctl" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/LED_Output_TypeDef.ctl"/>
-			<Item Name="Control Board - Write.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Control Board - Write.vi"/>
-			<Item Name="Control Board - Update.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Control Board - Update.vi"/>
-			<Item Name="Control Board - Close.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Control Board - Close.vi"/>
+			<Item Name="Control Board - Open.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Control Board - Open.vi"/>
+			<Item Name="PWM_Output_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/PWM_Output_TypeDef.ctl"/>
+			<Item Name="LED_Output_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/LED_Output_TypeDef.ctl"/>
+			<Item Name="Control Board - Update.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Control Board - Update.vi"/>
+			<Item Name="Control Board - Close.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Control Board - Close.vi"/>
 			<Item Name="Prepare Joystick Data for Displays.vi" Type="VI" URL="../Prepare Joystick Data for Displays.vi"/>
 			<Item Name="Initialize Camera and CheckList.vi" Type="VI" URL="../Initialize Camera and CheckList.vi"/>
-			<Item Name="BB_CameraDirectly from MJPG-Streamer.vi" Type="VI" URL="../../../../../../../../Users/Developer/Downloads/BB_LabVIEW_MJPG-Streamer/BB_CameraDirectly from MJPG-Streamer.vi"/>
+			<Item Name="BB_CameraDirectly from MJPG-Streamer.vi" Type="VI" URL="/Users/Developer/Downloads/BB_LabVIEW_MJPG-Streamer/BB_CameraDirectly from MJPG-Streamer.vi"/>
 			<Item Name="GRIP Contours Report.ctl" Type="VI" URL="../../Robot Code/GRIP Contours Report.ctl"/>
 			<Item Name="Get GRIP Data.vi" Type="VI" URL="../../Robot Code/Get GRIP Data.vi"/>
 			<Item Name="Autonomous Mode.ctl" Type="VI" URL="../../Robot Code/Autonomous Mode.ctl"/>
 			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="BB_CameraMJPG-StreamerRead.vi" Type="VI" URL="../../../../../../../../Users/Developer/Downloads/BB_LabVIEW_MJPG-Streamer/BB_CameraMJPG-StreamerRead.vi"/>
-			<Item Name="BB_CameraIssue HTTP Request from MJPG-Streamer.vi" Type="VI" URL="../../../../../../../../Users/Developer/Downloads/BB_LabVIEW_MJPG-Streamer/BB_CameraIssue HTTP Request from MJPG-Streamer.vi"/>
-			<Item Name="BB_DashboardFPS Calculator.vi" Type="VI" URL="../../../../../../../../Users/Developer/Downloads/BB_LabVIEW_MJPG-Streamer/BB_DashboardFPS Calculator.vi"/>
+			<Item Name="Inline CRC-8-CCITT &amp; CRC-8-Maxim.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Inline CRC-8-CCITT &amp; CRC-8-Maxim.vi"/>
+			<Item Name="CRC-8-Maxim 1-Wire (DOW).vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Wrappers/CRC-8-Maxim 1-Wire (DOW).vi"/>
+			<Item Name="Inline CRC-32.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Inline CRC-32.vi"/>
+			<Item Name="Inline CRC-16-CCITT.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Inline CRC-16-CCITT.vi"/>
+			<Item Name="CRC-16-CCITT-xMODEM.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Wrappers/CRC-16-CCITT-xMODEM.vi"/>
+			<Item Name="CRC-16-CCITT-0xFFFF.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Wrappers/CRC-16-CCITT-0xFFFF.vi"/>
+			<Item Name="CRC-16-CCITT-0x1D0F.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Wrappers/CRC-16-CCITT-0x1D0F.vi"/>
+			<Item Name="CRC-8-CCITT.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Inline CRC/CRC SubVIs/Wrappers/CRC-8-CCITT.vi"/>
+			<Item Name="Inline CRC.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Inline CRC/Inline CRC.vi"/>
+			<Item Name="Get Substrings &amp; Calculate CRC.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Get Substrings &amp; Calculate CRC.vi"/>
+			<Item Name="Analog_Input_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Analog_Input_TypeDef.ctl"/>
+			<Item Name="Switch_Input_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Switch_Input_TypeDef.ctl"/>
+			<Item Name="Control Board - Read.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Control Board - Read.vi"/>
+			<Item Name="Control Board - Write.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Control Board - Write.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC_Dashboard" Type="EXE">

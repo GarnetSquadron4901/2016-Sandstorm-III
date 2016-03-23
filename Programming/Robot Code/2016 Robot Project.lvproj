@@ -214,11 +214,11 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Support Code" Type="Folder">
 			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
-			<Item Name="Falling Edge Detector.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Falling Edge Detector.vi"/>
+			<Item Name="Falling Edge Detector.vi" Type="VI" URL="../../../../../GarnetSquadronThings.git/trunk/LabVIEW/Falling Edge Detector.vi"/>
 			<Item Name="Get NT PID Parameter.vi" Type="VI" URL="../Get NT PID Parameter.vi"/>
 			<Item Name="Load Robot Parameters.vi" Type="VI" URL="../Load Robot Parameters.vi"/>
-			<Item Name="Map.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Map.vi"/>
-			<Item Name="Rising Edge Detector.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Rising Edge Detector.vi"/>
+			<Item Name="Map.vi" Type="VI" URL="../../../../../GarnetSquadronThings.git/trunk/LabVIEW/Map.vi"/>
+			<Item Name="Rising Edge Detector.vi" Type="VI" URL="../../../../../GarnetSquadronThings.git/trunk/LabVIEW/Rising Edge Detector.vi"/>
 			<Item Name="Round to Nearest.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Round to Nearest.vi"/>
 		</Item>
 		<Item Name="Team Code" Type="Folder">
@@ -228,13 +228,13 @@ AddOutputFilter chunkFilter
 				<Item Name="Autonomous Mode.ctl" Type="VI" URL="../Autonomous Mode.ctl"/>
 			</Item>
 			<Item Name="Joysticks" Type="Folder">
-				<Item Name="Joystick - Array to Cluster.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Joystick - Array to Cluster.vi"/>
-				<Item Name="Joystick - Begin All.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Joystick - Begin All.vi"/>
+				<Item Name="Joystick - Array to Cluster.vi" Type="VI" URL="../../../../../GarnetSquadronThings.git/trunk/LabVIEW/Joysticks/Joystick - Array to Cluster.vi"/>
+				<Item Name="Joystick - Begin All.vi" Type="VI" URL="../../../../../GarnetSquadronThings.git/trunk/LabVIEW/Joysticks/Joystick - Begin All.vi"/>
 				<Item Name="Joystick - Close All.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Joystick - Close All.vi"/>
-				<Item Name="Joystick - Logitech Attack 3 - Left - Get All.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Joystick - Logitech Attack 3 - Left - Get All.vi"/>
-				<Item Name="Joystick - Logitech Attack 3 - Right - Get All.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Joystick - Logitech Attack 3 - Right - Get All.vi"/>
-				<Item Name="Logitech Attack 3 Axis Map.ctl" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Logitech Attack 3 Axis Map.ctl"/>
-				<Item Name="Logitech Attack 3 Button Map.ctl" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Joysticks/Logitech Attack 3 Button Map.ctl"/>
+				<Item Name="Joystick - Logitech Attack 3 - Left - Get All.vi" Type="VI" URL="../../../../../GarnetSquadronThings.git/trunk/LabVIEW/Joysticks/Joystick - Logitech Attack 3 - Left - Get All.vi"/>
+				<Item Name="Joystick - Logitech Attack 3 - Right - Get All.vi" Type="VI" URL="../../../../../GarnetSquadronThings.git/trunk/LabVIEW/Joysticks/Joystick - Logitech Attack 3 - Right - Get All.vi"/>
+				<Item Name="Logitech Attack 3 Axis Map.ctl" Type="VI" URL="../../../../../GarnetSquadronThings.git/trunk/LabVIEW/Joysticks/Logitech Attack 3 Axis Map.ctl"/>
+				<Item Name="Logitech Attack 3 Button Map.ctl" Type="VI" URL="../../../../../GarnetSquadronThings.git/trunk/LabVIEW/Joysticks/Logitech Attack 3 Button Map.ctl"/>
 			</Item>
 			<Item Name="Periodic Tasks" Type="Folder">
 				<Item Name="Arm" Type="Folder">
@@ -254,14 +254,14 @@ AddOutputFilter chunkFilter
 					<Item Name="IMU AHRS TypeDef.ctl" Type="VI" URL="../IMU AHRS TypeDef.ctl"/>
 				</Item>
 				<Item Name="Operator Interface Control Board" Type="Folder">
-					<Item Name="Analog_Input_TypeDef.ctl" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Analog_Input_TypeDef.ctl"/>
-					<Item Name="LED_Output_TypeDef.ctl" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/LED_Output_TypeDef.ctl"/>
-					<Item Name="OICB - Get Analog.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/OICB - Get Analog.vi"/>
-					<Item Name="OICB - Get Switches.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/OICB - Get Switches.vi"/>
-					<Item Name="OICB - Set LED&apos;s.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/OICB - Set LED&apos;s.vi"/>
-					<Item Name="OICB - Set PWM.vi" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/OICB - Set PWM.vi"/>
-					<Item Name="PWM_Output_TypeDef.ctl" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/PWM_Output_TypeDef.ctl"/>
-					<Item Name="Switch_Input_TypeDef.ctl" Type="VI" URL="../../../../../Projects/FRC Operator Interface Control Board/controlBoard_LabVIEW/Switch_Input_TypeDef.ctl"/>
+					<Item Name="Analog_Input_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Analog_Input_TypeDef.ctl"/>
+					<Item Name="LED_Output_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/LED_Output_TypeDef.ctl"/>
+					<Item Name="OICB - Get Analog.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/OICB - Get Analog.vi"/>
+					<Item Name="OICB - Get Switches.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/OICB - Get Switches.vi"/>
+					<Item Name="OICB - Set LED&apos;s.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/OICB - Set LED&apos;s.vi"/>
+					<Item Name="OICB - Set PWM.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/OICB - Set PWM.vi"/>
+					<Item Name="PWM_Output_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/PWM_Output_TypeDef.ctl"/>
+					<Item Name="Switch_Input_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Switch_Input_TypeDef.ctl"/>
 				</Item>
 				<Item Name="Robot Drive" Type="Folder">
 					<Item Name="Drive Base - Arcade Set.vi" Type="VI" URL="../../Dashboard Code/Drive Base - Arcade Set.vi"/>
@@ -272,13 +272,13 @@ AddOutputFilter chunkFilter
 					<Item Name="Drive Base - Tank Set.vi" Type="VI" URL="../../Dashboard Code/Drive Base - Tank Set.vi"/>
 					<Item Name="Drive Base - Update.vi" Type="VI" URL="../../Dashboard Code/Drive Base - Update.vi"/>
 					<Item Name="Drive Base Mode.ctl" Type="VI" URL="../Drive Base Mode.ctl"/>
-					<Item Name="Slew Rate - Drive.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Slew Rate - Drive.vi"/>
+					<Item Name="Slew Rate - Drive.vi" Type="VI" URL="../../../../../GarnetSquadronThings.git/trunk/LabVIEW/Slew Rate - Drive.vi"/>
 					<Item Name="WPI_RobotDriveArcadeDrive_Standard(SlewRateLimited).vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/WPI_RobotDriveArcadeDrive_Standard(SlewRateLimited).vi"/>
-					<Item Name="WPI_RobotDriveArcadeDrive_Standard_SlewRateControl.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/WPI_RobotDriveArcadeDrive_Standard_SlewRateControl.vi"/>
-					<Item Name="WPI_RobotDriveTankDrive_SlewRateControl.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/WPI_RobotDriveTankDrive_SlewRateControl.vi"/>
+					<Item Name="WPI_RobotDriveArcadeDrive_Standard_SlewRateControl.vi" Type="VI" URL="../../../../../GarnetSquadronThings.git/trunk/LabVIEW/WPI_RobotDriveArcadeDrive_Standard_SlewRateControl.vi"/>
+					<Item Name="WPI_RobotDriveTankDrive_SlewRateControl.vi" Type="VI" URL="../../../../../GarnetSquadronThings.git/trunk/LabVIEW/WPI_RobotDriveTankDrive_SlewRateControl.vi"/>
 				</Item>
 				<Item Name="Shooter" Type="Folder">
-					<Item Name="REV Robotics Analog Pressure Sensor - Voltage to Pressure.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/REV Robotics Analog Pressure Sensor - Voltage to Pressure.vi"/>
+					<Item Name="REV Robotics Analog Pressure Sensor - Voltage to Pressure.vi" Type="VI" URL="../../../../../GarnetSquadronThings.git/trunk/LabVIEW/REV Robotics Analog Pressure Sensor - Voltage to Pressure.vi"/>
 					<Item Name="Shooter Control.ctl" Type="VI" URL="../Shooter Control.ctl"/>
 				</Item>
 				<Item Name="Periodic Tasks.vi" Type="VI" URL="../Periodic Tasks.vi"/>
@@ -905,14 +905,14 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_UtilitiesTimebaseConstants.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesTimebaseConstants.vi"/>
 				<Item Name="Write Value Core.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Write Value Core.vi"/>
 			</Item>
-			<Item Name="FRC ADI MXP IMU.lvlib" Type="Library" URL="../../../../../../../ADIS16448-RoboRIO-Driver/trunk/LabVIEW/ADI MXP IMU/FRC ADI MXP IMU.lvlib"/>
+			<Item Name="FRC ADI MXP IMU.lvlib" Type="Library" URL="../../../../../ADIS16448-RoboRIO-Driver.git/trunk/LabVIEW/ADI MXP IMU/FRC ADI MXP IMU.lvlib"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Slew Rate.vi" Type="VI" URL="../../../../../Library/GarnetSquadronThings/Slew Rate.vi"/>
+			<Item Name="Slew Rate.vi" Type="VI" URL="../../../../../GarnetSquadronThings.git/trunk/LabVIEW/Slew Rate.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
