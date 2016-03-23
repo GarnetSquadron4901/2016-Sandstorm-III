@@ -254,14 +254,14 @@ AddOutputFilter chunkFilter
 					<Item Name="IMU AHRS TypeDef.ctl" Type="VI" URL="../IMU AHRS TypeDef.ctl"/>
 				</Item>
 				<Item Name="Operator Interface Control Board" Type="Folder">
-					<Item Name="Analog_Input_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Analog_Input_TypeDef.ctl"/>
-					<Item Name="LED_Output_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/LED_Output_TypeDef.ctl"/>
-					<Item Name="OICB - Get Analog.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/OICB - Get Analog.vi"/>
-					<Item Name="OICB - Get Switches.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/OICB - Get Switches.vi"/>
-					<Item Name="OICB - Set LED&apos;s.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/OICB - Set LED&apos;s.vi"/>
-					<Item Name="OICB - Set PWM.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/OICB - Set PWM.vi"/>
-					<Item Name="PWM_Output_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/PWM_Output_TypeDef.ctl"/>
-					<Item Name="Switch_Input_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/controlBoard_LabVIEW/Switch_Input_TypeDef.ctl"/>
+					<Item Name="Analog_Input_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/LabVIEW/Analog_Input_TypeDef.ctl"/>
+					<Item Name="LED_Output_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/LabVIEW/LED_Output_TypeDef.ctl"/>
+					<Item Name="OICB - Get Analog.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/LabVIEW/OICB - Get Analog.vi"/>
+					<Item Name="OICB - Get Switches.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/LabVIEW/OICB - Get Switches.vi"/>
+					<Item Name="OICB - Set LED&apos;s.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/LabVIEW/OICB - Set LED&apos;s.vi"/>
+					<Item Name="OICB - Set PWM.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/LabVIEW/OICB - Set PWM.vi"/>
+					<Item Name="PWM_Output_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/LabVIEW/PWM_Output_TypeDef.ctl"/>
+					<Item Name="Switch_Input_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/LabVIEW/Switch_Input_TypeDef.ctl"/>
 				</Item>
 				<Item Name="Robot Drive" Type="Folder">
 					<Item Name="Drive Base - Arcade Set.vi" Type="VI" URL="../../Dashboard Code/Drive Base - Arcade Set.vi"/>

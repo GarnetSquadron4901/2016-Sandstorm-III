@@ -2,7 +2,7 @@ setlocal
 C:
 call :GotoFolder C:\WA
 call :GotoFolder C:\WA\GarnetSquadron
-call :UpdateSvnRepo https://github.com/GarnetSquardon4901/ 2016-Sand-Storm-III.git
+call :UpdateSvnRepo https://github.com/GarnetSquardon4901/ 2016-Sandstorm-III.git
 call :UpdateSvnRepo https://github.com/GarnetSquardon4901/ GarnetSquadronThings.git
 call :UpdateSvnRepo https://github.com/GarnetSquardon4901/ Operator-Interface-Control-Board.git
 call :UpdateSvnRepo https://github.com/juchong/ ADIS16448-RoboRIO-Driver.git
