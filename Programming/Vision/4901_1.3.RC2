@@ -1,0 +1,155 @@
+<grip:Pipeline>
+  <sources>
+    <grip:Camera>
+      <property name="address" value="http://raspberrypi.local:1180/?action=stream"/>
+    </grip:Camera>
+  </sources>
+  <steps>
+    <grip:Step name="Publish Number">
+      <grip:Input step="0" socket="0"/>
+      <grip:Input step="0" socket="1">
+        <value>FPS</value>
+      </grip:Input>
+      <grip:Input step="0" socket="2">
+        <value>true</value>
+      </grip:Input>
+    </grip:Step>
+    <grip:Step name="Resize Image">
+      <grip:Input step="1" socket="0"/>
+      <grip:Input step="1" socket="1">
+        <value>320.0</value>
+      </grip:Input>
+      <grip:Input step="1" socket="2">
+        <value>240.0</value>
+      </grip:Input>
+      <grip:Input step="1" socket="3">
+        <value>CUBIC</value>
+      </grip:Input>
+      <grip:Output step="1" socket="0" previewed="false"/>
+    </grip:Step>
+    <grip:Step name="HSV Threshold">
+      <grip:Input step="2" socket="0"/>
+      <grip:Input step="2" socket="1">
+        <value>
+          <double>66.36690647482014</double>
+          <double>93.99317406143345</double>
+        </value>
+      </grip:Input>
+      <grip:Input step="2" socket="2">
+        <value>
+          <double>0.0</double>
+          <double>85.2901023890785</double>
+        </value>
+      </grip:Input>
+      <grip:Input step="2" socket="3">
+        <value>
+          <double>123.83093525179855</double>
+          <double>255.0</double>
+        </value>
+      </grip:Input>
+      <grip:Output step="2" socket="0" previewed="true"/>
+    </grip:Step>
+    <grip:Step name="Find Contours">
+      <grip:Input step="3" socket="0"/>
+      <grip:Input step="3" socket="1">
+        <value>false</value>
+      </grip:Input>
+      <grip:Output step="3" socket="0" previewed="false"/>
+    </grip:Step>
+    <grip:Step name="Convex Hulls">
+      <grip:Input step="4" socket="0"/>
+      <grip:Output step="4" socket="0" previewed="true"/>
+    </grip:Step>
+    <grip:Step name="Filter Contours">
+      <grip:Input step="5" socket="0"/>
+      <grip:Input step="5" socket="1">
+        <value>100.0</value>
+      </grip:Input>
+      <grip:Input step="5" socket="2">
+        <value>0</value>
+      </grip:Input>
+      <grip:Input step="5" socket="3">
+        <value>0</value>
+      </grip:Input>
+      <grip:Input step="5" socket="4">
+        <value>1000</value>
+      </grip:Input>
+      <grip:Input step="5" socket="5">
+        <value>0</value>
+      </grip:Input>
+      <grip:Input step="5" socket="6">
+        <value>1000</value>
+      </grip:Input>
+      <grip:Input step="5" socket="7">
+        <value>
+          <int>0</int>
+          <int>100</int>
+        </value>
+      </grip:Input>
+      <grip:Output step="5" socket="0" previewed="true"/>
+    </grip:Step>
+    <grip:Step name="Publish ContoursReport">
+      <grip:Input step="6" socket="0"/>
+      <grip:Input step="6" socket="1">
+        <value>myContoursReport</value>
+      </grip:Input>
+      <grip:Input step="6" socket="2">
+        <value>true</value>
+      </grip:Input>
+      <grip:Input step="6" socket="3">
+        <value>true</value>
+      </grip:Input>
+      <grip:Input step="6" socket="4">
+        <value>true</value>
+      </grip:Input>
+      <grip:Input step="6" socket="5">
+        <value>true</value>
+      </grip:Input>
+      <grip:Input step="6" socket="6">
+        <value>true</value>
+      </grip:Input>
+      <grip:Input step="6" socket="7">
+        <value>true</value>
+      </grip:Input>
+    </grip:Step>
+  </steps>
+  <connections>
+    <grip:Connection>
+      <grip:Output step="1" socket="0" previewed="false"/>
+      <grip:Input step="2" socket="0"/>
+    </grip:Connection>
+    <grip:Connection>
+      <grip:Output step="2" socket="0" previewed="true"/>
+      <grip:Input step="3" socket="0"/>
+    </grip:Connection>
+    <grip:Connection>
+      <grip:Output step="3" socket="0" previewed="false"/>
+      <grip:Input step="4" socket="0"/>
+    </grip:Connection>
+    <grip:Connection>
+      <grip:Output source="0" socket="1" previewed="false"/>
+      <grip:Input step="0" socket="0"/>
+    </grip:Connection>
+    <grip:Connection>
+      <grip:Output step="4" socket="0" previewed="true"/>
+      <grip:Input step="5" socket="0"/>
+    </grip:Connection>
+    <grip:Connection>
+      <grip:Output step="5" socket="0" previewed="true"/>
+      <grip:Input step="6" socket="0"/>
+    </grip:Connection>
+    <grip:Connection>
+      <grip:Output source="0" socket="0" previewed="true"/>
+      <grip:Input step="1" socket="0"/>
+    </grip:Connection>
+  </connections>
+  <settings>
+    <teamNumber>4901</teamNumber>
+    <publishAddress>roborio-4901-frc.local</publishAddress>
+    <deployAddress>raspberrypi.local</deployAddress>
+    <deployDir>/home/pi/vision/grip</deployDir>
+    <deployUser>pi</deployUser>
+    <deployJavaHome>/usr/</deployJavaHome>
+    <deployJvmOptions>-Xmx50m -XX:-OmitStackTraceInFastThrow -XX:+HeapDumpOnOutOfMemoryError</deployJvmOptions>
+  </settings>
+</grip:Pipeline>
