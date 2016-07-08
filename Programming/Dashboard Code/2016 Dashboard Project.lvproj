@@ -23,6 +23,7 @@
 		<Item Name="Dashboard Main.vi" Type="VI" URL="../Dashboard Main.vi"/>
 		<Item Name="no-camera.jpg" Type="Document" URL="../no-camera.jpg"/>
 		<Item Name="Image to String.vi" Type="VI" URL="../Image to String.vi"/>
+		<Item Name="BB_CameraDirectly from MJPG-Streamer.vi" Type="VI" URL="../../BB_LabVIEW_MJPG-Streamer/BB_CameraDirectly from MJPG-Streamer.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
@@ -185,6 +186,10 @@
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
 				<Item Name="IMAQ Flatten Image to String" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Flatten Image to String"/>
 				<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
+				<Item Name="WPI_CameraDecodeJPEGString.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraDecodeJPEGString.vi"/>
+				<Item Name="WPI_CameraERRFailedComm.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraERRFailedComm.vi"/>
+				<Item Name="WPI_UtilitiesFRC Build Error.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesFRC Build Error.vi"/>
+				<Item Name="WPI_CameraERRAccountProblem.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraERRAccountProblem.vi"/>
 			</Item>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -200,7 +205,6 @@
 			<Item Name="Control Board - Close.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/LabVIEW/Control Board - Close.vi"/>
 			<Item Name="Prepare Joystick Data for Displays.vi" Type="VI" URL="../Prepare Joystick Data for Displays.vi"/>
 			<Item Name="Initialize Camera and CheckList.vi" Type="VI" URL="../Initialize Camera and CheckList.vi"/>
-			<Item Name="BB_CameraDirectly from MJPG-Streamer.vi" Type="VI" URL="/Users/Developer/Downloads/BB_LabVIEW_MJPG-Streamer/BB_CameraDirectly from MJPG-Streamer.vi"/>
 			<Item Name="GRIP Contours Report.ctl" Type="VI" URL="../../Robot Code/GRIP Contours Report.ctl"/>
 			<Item Name="Get GRIP Data.vi" Type="VI" URL="../../Robot Code/Get GRIP Data.vi"/>
 			<Item Name="Autonomous Mode.ctl" Type="VI" URL="../../Robot Code/Autonomous Mode.ctl"/>
@@ -221,6 +225,9 @@
 			<Item Name="Switch_Input_TypeDef.ctl" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/LabVIEW/Switch_Input_TypeDef.ctl"/>
 			<Item Name="Control Board - Read.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/LabVIEW/Control Board - Read.vi"/>
 			<Item Name="Control Board - Write.vi" Type="VI" URL="../../../../../Operator-Interface-Control-Board.git/trunk/LabVIEW/Control Board - Write.vi"/>
+			<Item Name="BB_CameraMJPG-StreamerRead.vi" Type="VI" URL="../../BB_LabVIEW_MJPG-Streamer/BB_CameraMJPG-StreamerRead.vi"/>
+			<Item Name="BB_CameraIssue HTTP Request from MJPG-Streamer.vi" Type="VI" URL="../../BB_LabVIEW_MJPG-Streamer/BB_CameraIssue HTTP Request from MJPG-Streamer.vi"/>
+			<Item Name="BB_DashboardFPS Calculator.vi" Type="VI" URL="../../BB_LabVIEW_MJPG-Streamer/BB_DashboardFPS Calculator.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC_Dashboard" Type="EXE">
