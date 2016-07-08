@@ -22,6 +22,30 @@ class Generic_Controller:
         assert channel not in self.registry[channel_type], 'Channel %d is already in use by %s' % \
                                                                (channel, self.registry[channel_type][channel])
 
+    def add_digital_output(self, name, channel, return_type=wpilib.DigitalOutput):
+        self._add_channel_to_registry(self.DIO_NAME, name, channel)
+        if return_type is not None:
+            return return_type(channel=channel)
+
+    def add_digital_input(self, name, channel, return_type=wpilib.DigitalInput):
+        self._add_channel_to_registry(self.DIO_NAME, name, channel)
+        if return_type is not None:
+            return return_type(channel=channel)
+
+    def add_analog_input(self, name, channel, return_type=wpilib.AnalogInput):
+        self._add_channel_to_registry(self.ANALOG_NAME, name, channel)
+        if return_type is not None:
+            return return_type(channel=channel)
+
+    def add_pwm_output(self, name, channel, return_type=wpilib.PWM):
+        self._add_channel_to_registry(self.PWM_NAME, name, channel)
+        if return_type is not None:
+            return return_type(channel=channel)
+
+    def add_relay_output(self, name, channel, direction=wpilib.Relay.Direction.kBoth, return_type=wpilib.Relay):
+        self._add_channel_to_registry(self.RELAY_NAME, name, channel)
+        if return_type is not None:
+            return return_type(channel=channel, direction=direction)
 
 class RoboRIO_Controller(Generic_Controller):
     """ This class provides the RoboRIO Inputs and Outputs.
@@ -58,24 +82,5 @@ class RoboRIO_Controller(Generic_Controller):
     def __init__(self):
         super(RoboRIO_Controller, self).__init__(self.CHANNEL_DESCRIPTIONS)
 
-    def add_digital_output(self, name, channel):
-        super(RoboRIO_Controller, self)._add_channel_to_registry(self.DIO_NAME, name, channel)
 
-    def add_digital_input(self, name, channel):
-        super(RoboRIO_Controller, self)._add_channel_to_registry(self.DIO_NAME, name, channel)
-
-    def add_analog_input(self, name, channel):
-        super(RoboRIO_Controller, self)._add_channel_to_registry(self.ANALOG_NAME, name, channel)
-
-    def add_pwm_output(self, name, channel):
-        super(RoboRIO_Controller, self)._add_channel_to_registry(self.PWM_NAME, name, channel)
-
-    def add_relay_output(self, name, channel):
-        super(RoboRIO_Controller, self)._add_channel_to_registry(self.RELAY_NAME, name, channel)
-
-    def add_spi_device(self, name, cs_pin):
-        super(RoboRIO_Controller, self)._add_channel_to_registry(self.SPI_NAME, name, cs_pin)
-
-    def add_i2c_device(self, name, address):
-        super(RoboRIO_Controller, self)._add_channel_to_registry(self.I2C_NAME, name, address)
 
