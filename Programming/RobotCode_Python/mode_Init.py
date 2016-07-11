@@ -1,38 +1,77 @@
 import wpilib
+
+
 from Devices.RevRobotics import AnalogPressureSensor
-from subsystem_Arm import Arm
-from subsystem_DriverStation import DriverStation
-from subsystem_EndEffector import EndEffector
-from subsystem_Pneumatics import Pneumatics
-from subsystem_DriveBase import DriveBase
-from parameter_parser import Parameters
+from Devices.Maxbotix.MB10x0 import MB10x0_Digital
+from Devices.General import Potentiometer, LimitSwitch
+from Devices.AnalogDevices.ADIS16448 import ADIS16488
 
-class Init:
+from Subsystems.subsystem_Arm import Arm
+from Subsystems.subsystem_DriveBase import DriveBase
+from Subsystems.subsystem_DriverStation import DriverStation
+from Subsystems.subsystem_EndEffector import EndEffector
+from Subsystems.subsystem_Pneumatics import Pneumatics
+
+class InitRobot:
     def __init__(self):
-        self.motors = InitMotors()
-        self.sensors = InitSensors()
-        self.pneumatics = InitPneumatics()
+        self.devices = Devices()
+        self.subsystems = Subsystems(self.devices)
 
+class Devices:
+    """
+    This class initializes the hardware devices on the robot.
+    """
+    class InitMotors:
+        def __init__(self):
+            # PWM Outputs
+            self.left_drive = wpilib.Spark(channel=0)
+            self.right_drive = wpilib.Spark(channel=1)
+            self.grip = wpilib.VictorSP(channel=2)
 
-class InitMotors:
+            # CAN Outputs
+            self.arm = wpilib.CANTalon(deviceNumber=2)
+
+    class InitSensors:
+        def __init__(self):
+            # Digital Inputs
+            self.left_drive_encoder = wpilib.Encoder(aChannel=0, bChannel=1)
+            self.right_drive_encoder = wpilib.Encoder(aChannel=2, bChannel=3)
+            self.lock_disengaged_switch = LimitSwitch(channel=4)
+            self.ultrasonic_distance = MB10x0_Digital(channel=5)
+
+            # Analog Inputs
+            self.pressure_sensor = AnalogPressureSensor(channel=0)
+            self.arm_angle_sensor = Potentiometer(channel=1)
+
+            # XDP sensor
+            # self.imu = ADIS16488() - TODO: Finish implementing this class
+
+    class InitPneumatics:
+        def __init__(self):
+            self.compressor = wpilib.Compressor()
+            self.shooter = wpilib.Solenoid(channel=0)
+            self.grip = wpilib.Solenoid(channel=1)
+            self.arm_lock = wpilib.DoubleSolenoid(forwardChannel=2, reverseChannel=3)
+
+    class InitDriverStation:
+        def __init__(self):
+            self.left_joystick = wpilib.Joystick(0, 3, 10)
+
     def __init__(self):
-        self.left_drive = wpilib.Spark(channel=0)
-        self.right_drive = wpilib.Spark(channel=1)
-        self.arm = wpilib.CANTalon(deviceNumber=2)
-        self.grip = wpilib.VictorSP(channel=2)
+        self.motors = self.InitMotors()
+        self.sensors = self.InitSensors()
+        self.pneumatics = self.InitPneumatics()
 
 
-class InitSensors:
-    def __init__(self):
-        self.left_drive_encoder = wpilib.Encoder(aChannel=0, bChannel=1)
-        self.right_drive_encoder = wpilib.Encoder(aChannel=2, bChannel=3)
-        self.lock_disengaged_switch = wpilib.DigitalInput(channel=4)
-       # self.ultrasonic_distance = wpilib.??? We need something to measure a PWM input.
-        self.pressure_sensor = AnalogPressureSensor()
+class Subsystems:
+    def __init__(self, devices):
+        """
 
+        :param devices: Devices
+        """
 
-
-class InitPneumatics:
-    def __init__(self):
-        self.compressor = wpilib.Compressor()
-
+        self.arm = Arm(devices)
+        self.drive_base = DriveBase(devices)
+        self.driver_station = DriverStation(devices)
+        self.end_effector = EndEffector(devices)
+        self.pneumatics = Pneumatics(devices)

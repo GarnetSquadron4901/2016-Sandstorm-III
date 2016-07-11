@@ -7,7 +7,7 @@
 
 import wpilib
 
-from mode_Init import Devices
+from mode_Init import Init
 from mode_Autonomous import Autonomous
 from mode_Disabled import Disabled
 from mode_Teleop import Teleop
@@ -16,35 +16,30 @@ from mode_Test import Test
 
 
 class MyRobot(wpilib.IterativeRobot):
-    
+
     def robotInit(self):
         """
         This function is called upon program startup and
         should be used for any initialization code.
         """
-        self.devices =
+        self.robot_objects = InitObjects()
 
     def autonomousInit(self):
         """This function is run once each time the robot enters autonomous mode."""
-        self.auto_loop_counter = 0
-        self.auto_mode = Autonomous()
+
+        self.auto_mode = Autonomous(self.robot_objects)
 
     def autonomousPeriodic(self):
         """This function is called periodically during autonomous."""
-        
-        # Check if we've completed 100 loops (approximately 2 seconds)
-        if self.auto_loop_counter < 100:
-            self.robot_drive.drive(-0.5, 0) # Drive forwards at half speed
-            self.auto_loop_counter += 1
-        else:
-            self.robot_drive.drive(0, 0)    #Stop robot
+        self.auto_mode.periodic_update()
 
     def teleopPeriodic(self):
         """This function is called periodically during operator control."""
-        self.robot_drive.arcadeDrive(self.stick)
+        self.teleop_mode.periodic_update()
 
     def testPeriodic(self):
         """This function is called periodically during test mode."""
+        self.test_mode.periodic_update()
         wpilib.LiveWindow.run()
 
 if __name__ == "__main__":
