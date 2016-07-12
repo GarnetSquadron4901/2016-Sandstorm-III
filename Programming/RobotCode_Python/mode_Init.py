@@ -5,6 +5,7 @@ from Devices.RevRobotics import AnalogPressureSensor
 from Devices.Maxbotix.MB10x0 import MB10x0_Digital
 from Devices.General import Potentiometer, LimitSwitch
 from Devices.AnalogDevices.ADIS16448 import ADIS16488
+from Devices.Joysticks.LogitechAttack3 import LogitechAttack3
 
 from Subsystems.subsystem_Arm import Arm
 from Subsystems.subsystem_DriveBase import DriveBase
@@ -21,6 +22,12 @@ class Devices:
     """
     This class initializes the hardware devices on the robot.
     """
+    def __init__(self):
+        self.motors = self.InitMotors()
+        self.sensors = self.InitSensors()
+        self.pneumatics = self.InitPneumatics()
+        self.driver_station = self.InitDriverStation()
+
     class InitMotors:
         def __init__(self):
             # PWM Outputs
@@ -55,12 +62,11 @@ class Devices:
 
     class InitDriverStation:
         def __init__(self):
-            self.left_joystick = wpilib.Joystick(0, 3, 10)
+            self.left_joystick = LogitechAttack3(0)
+            self.right_joystick = LogitechAttack3(1)
 
-    def __init__(self):
-        self.motors = self.InitMotors()
-        self.sensors = self.InitSensors()
-        self.pneumatics = self.InitPneumatics()
+
+
 
 
 class Subsystems:
