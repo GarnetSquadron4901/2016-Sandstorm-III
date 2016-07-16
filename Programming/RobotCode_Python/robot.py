@@ -7,7 +7,7 @@
 
 import wpilib
 
-from mode_Init import Init
+from mode_Init import InitRobot
 from mode_Autonomous import Autonomous
 from mode_Disabled import Disabled
 from mode_Teleop import Teleop
@@ -22,7 +22,7 @@ class MyRobot(wpilib.IterativeRobot):
         This function is called upon program startup and
         should be used for any initialization code.
         """
-        self.robot_objects = InitObjects()
+        self.robot_objects = InitRobot()
 
     def autonomousInit(self):
         """This function is run once each time the robot enters autonomous mode."""
