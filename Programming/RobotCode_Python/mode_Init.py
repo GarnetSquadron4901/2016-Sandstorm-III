@@ -3,7 +3,7 @@ import wpilib
 from Devices.General import Potentiometer, LimitSwitch
 from Devices.Joysticks.Logitech.Attack3 import LogitechAttack3
 from Devices.Maxbotix.MB10x0 import MB10x0_Digital
-from Devices.RevRobotics import AnalogPressureSensor
+from Devices.RevRobotics.AnalogPressureSensor import AnalogPressureSensor
 from Subsystems.subsystem_Arm import Arm
 from Subsystems.subsystem_DriveBase import DriveBase
 from Subsystems.subsystem_DriverStation import DriverStation

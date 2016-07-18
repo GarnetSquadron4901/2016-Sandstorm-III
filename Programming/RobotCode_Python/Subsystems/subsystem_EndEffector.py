@@ -9,5 +9,5 @@ In this case, it controls the grip motors, claw opening and closing, as well as 
 import wpilib
 
 class EndEffector:
-    def __init__(self):
+    def __init__(self, devices):
         pass

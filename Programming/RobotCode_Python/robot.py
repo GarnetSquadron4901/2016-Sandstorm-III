@@ -2,7 +2,7 @@
 """
     robot.py
 
-    This file is the 'main' file for the robot. It will instantiate all of the subsystems and
+    This file is the 'main' file for the robot.
 """
 
 import wpilib
@@ -14,7 +14,6 @@ from mode_Teleop import Teleop
 from mode_Test import Test
 
 
-
 class MyRobot(wpilib.IterativeRobot):
 
     def robotInit(self):
@@ -23,11 +22,15 @@ class MyRobot(wpilib.IterativeRobot):
         should be used for any initialization code.
         """
         self.robot_objects = InitRobot()
+        self.auto_mode = Autonomous(self.robot_objects)
+        self.teleop_mode = Teleop(self.robot_objects)
+        self.disabled_mode = Disabled(self.robot_objects)
+        self.test_mode = Test(self.robot_objects)
 
     def autonomousInit(self):
         """This function is run once each time the robot enters autonomous mode."""
 
-        self.auto_mode = Autonomous(self.robot_objects)
+        self.auto_mode.auto_init()
 
     def autonomousPeriodic(self):
         """This function is called periodically during autonomous."""

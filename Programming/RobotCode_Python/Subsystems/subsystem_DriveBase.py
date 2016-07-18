@@ -16,7 +16,7 @@ class DriveBase:
 
     DEFAULT_REFRESH_TIME = 50e-3  # 50 ms
 
-    class arcade_drive:
+    class ArcadeDriveCalc:
         def __init__(self, x, y):
             # Calculate the speed
             self.left_speed = self.devices.driver_station.left_joystick.get_y() + \
@@ -37,24 +37,28 @@ class DriveBase:
 
         self.thread = PerpetualTimer(self.refresh_time, self.update)
 
-    def calculate_arcade(self, x, y):
+    def set_mode(self, mode):
+        self.mode = mode
 
 
-        return {'left_speed':left_speed, 'right_speed': right_speed}
+
 
     def update(self):
+
+        # Always set the speed to 0 to begin with.
         left_speed = 0
         right_speed = 0
 
         if self.mode is self.MODE_DISABLED:
-            """ This mode leaves the motor speeds at 0. """
-            pass
+            """ This mode sets the motor speeds to 0. """
+            left_speed = 0
+            right_speed = 0
 
         elif self.mode is self.MODE_ARCADE_COMBINED:
             """ Uses left joystick only """
             # Calculate the arcade_speeds
-            arcade_speeds = self.arcade_drive(x=self.devices.driver_station.left_joystick.get_x(),
-                                              y=self.devices.driver_station.left_joystick.get_y())
+            arcade_speeds = self.ArcadeDriveCalc(x=self.devices.driver_station.left_joystick.get_x(),
+                                                 y=self.devices.driver_station.left_joystick.get_y())
 
             # Set the motor output
             left_speed = arcade_speeds.left_speed
@@ -65,8 +69,8 @@ class DriveBase:
                 Uses left joystick for forward/reverse
                 Uses right joystick for spin left/right
             """
-            arcade_speeds = self.arcade_drive(x=self.devices.driver_station.left_joystick.get_x(),
-                                              y=self.devices.driver_station.left_joystick.get_y())
+            arcade_speeds = self.ArcadeDriveCalc(x=self.devices.driver_station.left_joystick.get_x(),
+                                                 y=self.devices.driver_station.left_joystick.get_y())
 
             # Set the motor output
             left_speed = arcade_speeds.left_speed
@@ -77,9 +81,26 @@ class DriveBase:
             left_speed = self.devices.driver_station.left_joystick.get_y()
             right_speed = self.devices.driver_station.right_joystick.get_y()
 
+        elif self.mode is self.MODE_ENCODER:
+            #TODO Implement
+            pass
+
+        elif self.mode is self.MODE_VISION:
+            # TODO Implement
+            pass
+
+        elif self.mode is self.MODE_IMU:
+            # TODO Implement
+            pass
+
+        elif self.mode is self.MODE_COMMAND:
+            # TODO Implement
+            pass
+
         else:
             """ Catch-all case """
-            pass
+            left_speed = 0
+            right_speed = 0
 
         self.devices.motors.left_drive.set(left_speed)
         self.devices.motors.right_drive.set(right_speed)

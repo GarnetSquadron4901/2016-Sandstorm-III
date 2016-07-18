@@ -7,3 +7,7 @@ class Teleop:
         @type robot_objects: InitRobot
         """
         self.robot_objects = robot_objects
+
+    def periodic_update(self):
+        # Set the drive mode to manual mode, arcade split
+        self.robot_objects.subsystems.drive_base.set_mode(self.robot_objects.subsystems.drive_base.MODE_ARCADE_SPLIT)

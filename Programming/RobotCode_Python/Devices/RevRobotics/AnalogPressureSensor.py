@@ -1,24 +1,18 @@
 import wpilib
 
-class AnalogPressureSensor:
+
+class AnalogPressureSensor(wpilib.AnalogInput):
     DEFAULT_GAIN = 150.0
     DEFAULT_OFFSET = -25.0
 
     def __init__(self, channel):
-        self.sensor_ai = wpilib.AnalogInput(channel=channel)
+        super().__init__(channel=channel)
         self.controller = wpilib.ControllerPower()
-        self.filter = wpilib.LinearDigitalFilter(self.get_instantaneous_pressure_psi, )
         self.gain = self.DEFAULT_GAIN
         self.offset = self.DEFAULT_OFFSET
 
-    def get_vout(self):
-        return self.sensor_ai.getVoltage()
-
-    def get_vcc(self):
-        return self.controller.getVoltage5V()
-
     def get_instantaneous_pressure_psi(self):
-        return self.gain * (self.get_vout() / self.get_vcc()) + self.offset
+        return self.gain * (super().getVoltage() / self.controller.getVoltage5V()) + self.offset
 
     def get_pressure_psi(self):
         raise NotImplementedError
