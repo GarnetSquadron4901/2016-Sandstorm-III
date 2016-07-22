@@ -15,6 +15,7 @@ class InitRobot:
         self.devices = Devices()
         self.subsystems = Subsystems(self.devices)
 
+
 class Devices:
     """
     This class initializes the hardware devices on the robot.
@@ -61,9 +62,6 @@ class Devices:
         def __init__(self):
             self.left_joystick = LogitechAttack3(0)
             self.right_joystick = LogitechAttack3(1)
-
-
-
 
 
 class Subsystems:
