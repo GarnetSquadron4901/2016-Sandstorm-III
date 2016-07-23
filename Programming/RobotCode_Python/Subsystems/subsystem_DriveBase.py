@@ -112,8 +112,12 @@ class DriveBase(Command):
         self.right_output_command = right_output
 
     def are_encoders_in_range(self):
-        return self.left_encoder_target - self.encoder_tolerance <= self.devices.sensors.left_drive_encoder.getDistance() <= self.left_encoder_target + self.encoder_tolerance and \
-               self.right_encoeer_target - self.encoder_tolerance <= self.devices.sensors.right_drive_encoder.getDistance() <= self.right_encoeer_target + self.encoder_tolerance
+        return self.left_encoder_target - self.encoder_tolerance <= \
+               self.devices.sensors.left_drive_encoder.getDistance() <= \
+               self.left_encoder_target + self.encoder_tolerance and \
+               self.right_encoeer_target - self.encoder_tolerance <= \
+               self.devices.sensors.right_drive_encoder.getDistance() <= \
+               self.right_encoeer_target + self.encoder_tolerance
 
     def set_safety_enabled(self, enable):
         self.safety_config = enable
@@ -224,3 +228,6 @@ class DriveBase(Command):
     def end(self):
         self.devices.motors.left_drive.set(0)
         self.devices.motors.right_drive.set(0)
+
+    def isFinished(self):
+        return False

@@ -77,6 +77,12 @@ class Subsystems:
         self.end_effector = EndEffector()
         self.pneumatics = Pneumatics()
 
+        self.arm.setRunWhenDisabled(True)
+        self.drive_base.setRunWhenDisabled(True)
+        self.driver_station.setRunWhenDisabled(True)
+        self.end_effector.setRunWhenDisabled(True)
+        self.pneumatics.setRunWhenDisabled(True)
+
         self.arm.start(devices)
         self.drive_base.start(devices)
         self.driver_station.start(devices)

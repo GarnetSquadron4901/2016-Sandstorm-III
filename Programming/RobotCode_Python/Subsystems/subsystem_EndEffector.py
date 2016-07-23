@@ -23,3 +23,6 @@ class EndEffector(Command):
 
     def execute(self):
         pass
+
+    def isFinished(self):
+        return False
