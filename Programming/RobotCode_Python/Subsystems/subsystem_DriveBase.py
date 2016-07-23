@@ -20,9 +20,9 @@ class DriveBase(Command):
     MODE_TIMEOUT = 'Timed Out'
 
     DEFAULT_REFRESH_TIME = 50e-3  # 50 ms
-    DEFAULT_TIMEOUT = 500E-3 # 500 ms
+    DEFAULT_TIMEOUT = 500E-3  # 500 ms
 
-    DEFAULT_ENCODER_TOLERANCE = 10 # 10 ticks
+    DEFAULT_ENCODER_TOLERANCE = 10  # 10 ticks
 
     class ArcadeDriveCalc:
         def __init__(self, x, y):
@@ -44,7 +44,7 @@ class DriveBase(Command):
     def initialize(self):
 
 
-        self.mode = self.MODE_DISABLED
+        self.do_disabled()
         self.last_mode = None
         self.refresh_time = self.DEFAULT_REFRESH_TIME
 
@@ -80,6 +80,9 @@ class DriveBase(Command):
 
         self.ds = wpilib.DriverStation.getInstance()
 
+    def do_disabled(self):
+        self.mode = self.MODE_DISABLED
+        self.set_safety_enabled(False)
 
     def do_arcade_combined(self, enable_safety=True):
         self.set_safety_enabled(enable_safety)
@@ -129,12 +132,18 @@ class DriveBase(Command):
         if self.last_update + self.timeout < time.time():
             self.mode = self.MODE_TIMEOUT
 
+    def print_drivebase(self, msg):
+        if any(msg) and type(msg) is str:
+            print('DriveBase: %s' % msg)
+
     def check_mode(self):
         if self.mode != self.last_mode:
-            print('New Mode: %s' % self.mode)
+            msg = 'Mode Change: '
+            msg += 'New Mode: %s' % self.mode
             if self.last_mode is not None:
-                print('Old Mode: %s' % self.last_mode)
+                msg += '; Old Mode: %s' % self.last_mode
             self.last_mode = self.mode
+            self.print_drivebase(msg)
 
     def execute(self):
 

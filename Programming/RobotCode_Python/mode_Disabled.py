@@ -13,6 +13,6 @@ class Disabled:
         pass
 
     def periodic_update(self):
-        pass
+        self.robot_objects.subsystems.drive_base.do_disabled()
 
 

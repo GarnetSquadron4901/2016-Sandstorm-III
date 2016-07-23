@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="157a1f77-6b3b-4fd1-a8b7-ab8f5ac072f5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Subsystems/subsystem_Arm.py" afterPath="$PROJECT_DIR$/Subsystems/subsystem_Arm.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Subsystems/subsystem_DriveBase.py" afterPath="$PROJECT_DIR$/Subsystems/subsystem_DriveBase.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Subsystems/subsystem_DriverStation.py" afterPath="$PROJECT_DIR$/Subsystems/subsystem_DriverStation.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Subsystems/subsystem_EndEffector.py" afterPath="$PROJECT_DIR$/Subsystems/subsystem_EndEffector.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Subsystems/subsystem_Pneumatics.py" afterPath="$PROJECT_DIR$/Subsystems/subsystem_Pneumatics.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mode_Init.py" afterPath="$PROJECT_DIR$/mode_Init.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot.py" afterPath="$PROJECT_DIR$/robot.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mode_Disabled.py" afterPath="$PROJECT_DIR$/mode_Disabled.py" />
     </list>
     <ignored path="RobotCode_Python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="subsystem_DriveBase.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="subsystem_DriveBase.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Subsystems/subsystem_DriveBase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="962">
-              <caret line="231" column="4" selection-start-line="231" selection-start-column="4" selection-end-line="232" selection-end-column="20" />
+            <state relative-caret-position="-1746">
+              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -58,16 +53,6 @@
               <folding>
                 <element signature="e#468#500#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scheduler.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python35/Lib/site-packages/wpilib/command/scheduler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1479">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -144,11 +129,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="functions.py" pinned="false" current-in-tab="false">
         <entry file="file://C:/Python35/Lib/site-packages/hal_impl/functions.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="349">
               <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mode_Disabled.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mode_Disabled.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -202,16 +197,16 @@
         <option value="$PROJECT_DIR$/UpdateAllPip.py" />
         <option value="$PROJECT_DIR$/Algorithms/PID.py" />
         <option value="$PROJECT_DIR$/mode_Teleop.py" />
-        <option value="$PROJECT_DIR$/mode_Disabled.py" />
         <option value="$PROJECT_DIR$/mode_Test.py" />
         <option value="$PROJECT_DIR$/Subsystems/subsystem_util.py" />
         <option value="$PROJECT_DIR$/mode_Init.py" />
         <option value="$PROJECT_DIR$/robot.py" />
-        <option value="$PROJECT_DIR$/Subsystems/subsystem_DriveBase.py" />
         <option value="$PROJECT_DIR$/Subsystems/subsystem_Arm.py" />
         <option value="$PROJECT_DIR$/Subsystems/subsystem_DriverStation.py" />
         <option value="$PROJECT_DIR$/Subsystems/subsystem_EndEffector.py" />
         <option value="$PROJECT_DIR$/Subsystems/subsystem_Pneumatics.py" />
+        <option value="$PROJECT_DIR$/mode_Disabled.py" />
+        <option value="$PROJECT_DIR$/Subsystems/subsystem_DriveBase.py" />
       </list>
     </option>
   </component>
@@ -636,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1469223439055</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Teleop drive motors working.">
+      <created>1469307407357</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1469307407357</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -647,10 +649,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3212824" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32079208" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.260066" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937294" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29042906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -706,7 +708,9 @@
     <MESSAGE value="Progress commit on Python porting." />
     <MESSAGE value="Obviously not finished, but got tests to pass. Good milestone if something bad happens." />
     <MESSAGE value="Finished PID controller code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished PID controller code." />
+    <MESSAGE value="Teleop drive motors working." />
+    <MESSAGE value="Added better mode change message." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added better mode change message." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -922,13 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mode_Disabled.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mode_Test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1031,42 +1028,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Subsystems/subsystem_DriveBase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="962">
-          <caret line="231" column="4" selection-start-line="231" selection-start-column="4" selection-end-line="232" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Subsystems/subsystem_Arm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Subsystems/subsystem_DriverStation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Subsystems/subsystem_EndEffector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <element signature="e#220#233#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1096,6 +1063,44 @@
         <state relative-caret-position="349">
           <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Subsystems/subsystem_EndEffector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="e#220#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Subsystems/subsystem_DriverStation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mode_Disabled.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Subsystems/subsystem_DriveBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1746">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
