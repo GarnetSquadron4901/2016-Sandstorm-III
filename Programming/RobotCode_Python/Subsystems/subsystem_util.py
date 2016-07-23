@@ -1,19 +1,20 @@
-from threading import Timer,Thread,Event
-
+from threading import Timer
+import wpilib
 
 class PerpetualTimer:
 
-    def __init__(self,t,hFunction):
+    def __init__(self, t, hFunction):
         self.t=t
         self.hFunction = hFunction
-        self.thread = Timer(self.t,self.handle_function)
+        self.thread = Timer(self.t, self.handle_function)
 
     def handle_function(self):
         try:
             self.hFunction()
         except Exception as e:
             print ('Could not run handle function: %s' % str(e))
-        self.thread = Timer(self.t,self.handle_function)
+
+        self.thread = Timer(self.t, self.handle_function)
         self.thread.start()
 
     def start(self):

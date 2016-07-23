@@ -71,8 +71,14 @@ class Subsystems:
         :param devices: Devices
         """
 
-        self.arm = Arm(devices)
-        self.drive_base = DriveBase(devices)
-        self.driver_station = DriverStation(devices)
-        self.end_effector = EndEffector(devices)
-        self.pneumatics = Pneumatics(devices)
+        self.arm = Arm()
+        self.drive_base = DriveBase()
+        self.driver_station = DriverStation()
+        self.end_effector = EndEffector()
+        self.pneumatics = Pneumatics()
+
+        self.arm.start(devices)
+        self.drive_base.start(devices)
+        self.driver_station.start(devices)
+        self.end_effector.start(devices)
+        self.pneumatics.start(devices)

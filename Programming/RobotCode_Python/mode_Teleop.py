@@ -8,6 +8,9 @@ class Teleop:
         """
         self.robot_objects = robot_objects
 
+    def init(self):
+        pass
+
     def periodic_update(self):
         # Set the drive mode to manual mode, arcade split
         self.robot_objects.subsystems.drive_base.do_arcade_split()

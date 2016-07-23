@@ -2,10 +2,12 @@ import wpilib
 import time
 import threading
 
-from Subsystems.subsystem_util import PerpetualTimer
+from wpilib.command import Command
+
+# from Subsystems.subsystem_util import PerpetualTimer
 from Algorithms import PID
 
-class DriveBase:
+class DriveBase(Command):
 
     MODE_DISABLED = 'Disabled'
     MODE_ARCADE_COMBINED = 'Joystick 0 - Arcade'
@@ -25,28 +27,27 @@ class DriveBase:
     class ArcadeDriveCalc:
         def __init__(self, x, y):
             # Calculate the speed
-            self.left_speed = self.devices.driver_station.left_joystick.get_y() + \
-                         self.devices.driver_station.left_joystick.get_x()
-            self.right_speed = self.devices.driver_station.left_joystick.get_y() - \
-                          self.devices.driver_station.left_joystick.get_x()
+            self.left_speed = y + x
+            self.right_speed = y - x
 
             # Make the speed in range
             self.left_speed = max(min(self.left_speed, 1), -1)
             self.right_speed = max(min(self.right_speed, 1), -1)
 
-    def __init__(self, devices):
+    def start(self, devices):
         """
-
         :param devices: mode_Init:Devices
         """
-
         self.devices = devices
+        super().start()
+
+    def initialize(self):
+
 
         self.mode = self.MODE_DISABLED
         self.last_mode = None
         self.refresh_time = self.DEFAULT_REFRESH_TIME
 
-        self.thread_timer = PerpetualTimer(self.refresh_time, self.update)
         self.encoder_event = threading.Event()
 
         self.timeout = self.DEFAULT_TIMEOUT
@@ -72,26 +73,43 @@ class DriveBase:
                                                   output_min=-1,
                                                   output_max=1)
 
+        # Command mode objects
+        self.left_output_command = 0.0
+        self.right_output_command = 0.0
 
 
         self.ds = wpilib.DriverStation.getInstance()
 
-    def do_arcade_combined(self):
+
+    def do_arcade_combined(self, enable_safety=True):
+        self.set_safety_enabled(enable_safety)
+        self.feed_safety_watchdog()
         self.mode = self.MODE_ARCADE_COMBINED
 
-    def do_arcade_split(self):
+    def do_arcade_split(self, enable_safety=True):
+        self.set_safety_enabled(enable_safety)
+        self.feed_safety_watchdog()
         self.mode = self.MODE_ARCADE_SPLIT
 
-    def do_tank_drive(self):
+    def do_tank_drive(self, enable_safety=True):
+        self.set_safety_enabled(enable_safety)
+        self.feed_safety_watchdog()
         self.mode = self.MODE_TANK
 
     def do_encoder(self, target_left_distance, target_right_distance, wait_for_finish=True):
         self.left_encoder_target = self.devices.sensors.left_drive_encoder.getDistance() + target_left_distance
         self.right_encoder_target = self.devices.sensors.right_drive_encoder.getDistance() + target_right_distance
         self.mode = self.MODE_ENCODER
+        self.set_safety_enabled(False)
         if wait_for_finish is True:
             self.encoder_event.clear()
             self.encoder_event.wait()
+
+    def do_command(self, left_output, right_output, enable_safety=True):
+        self.set_safety_enabled(enable_safety)
+        self.feed_safety_watchdog()
+        self.left_output_command = left_output
+        self.right_output_command = right_output
 
     def are_encoders_in_range(self):
         return self.left_encoder_target - self.encoder_tolerance <= self.devices.sensors.left_drive_encoder.getDistance() <= self.left_encoder_target + self.encoder_tolerance and \
@@ -114,7 +132,7 @@ class DriveBase:
                 print('Old Mode: %s' % self.last_mode)
             self.last_mode = self.mode
 
-    def update(self):
+    def execute(self):
 
         self.check_safety()
         self.check_mode()
@@ -175,15 +193,15 @@ class DriveBase:
 
             elif self.mode is self.MODE_VISION:
                 # TODO Implement
-                pass
+                raise NotImplementedError
 
             elif self.mode is self.MODE_IMU:
                 # TODO Implement
-                pass
+                raise NotImplementedError
 
             elif self.mode is self.MODE_COMMAND:
-                # TODO Implement
-                pass
+                left_speed = self.left_output_command
+                right_speed = self.right_output_command
 
             elif self.mode is self.MODE_TIMEOUT:
                 """ This mode is set if the drive base watchdog timer expires. """
@@ -195,6 +213,7 @@ class DriveBase:
                 left_speed = 0
                 right_speed = 0
         except Exception as e:
+            print(str(e))
             self.ds.reportError(e, True)
             left_speed = 0
             right_speed = 0
@@ -202,3 +221,6 @@ class DriveBase:
         self.devices.motors.left_drive.set(left_speed)
         self.devices.motors.right_drive.set(right_speed)
 
+    def end(self):
+        self.devices.motors.left_drive.set(0)
+        self.devices.motors.right_drive.set(0)

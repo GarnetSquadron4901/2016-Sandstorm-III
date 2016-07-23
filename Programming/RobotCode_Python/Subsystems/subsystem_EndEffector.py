@@ -7,7 +7,19 @@ In this case, it controls the grip motors, claw opening and closing, as well as 
 """
 
 import wpilib
+from wpilib.command import Command
 
-class EndEffector:
-    def __init__(self, devices):
+class EndEffector(Command):
+
+    def start(self, devices):
+        """
+        :param devices: mode_Init:Devices
+        """
+        self.devices = devices
+        super().start()
+
+    def initialize(self):
+        pass
+
+    def execute(self):
         pass

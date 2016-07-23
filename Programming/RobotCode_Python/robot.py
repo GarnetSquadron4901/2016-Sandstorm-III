@@ -36,14 +36,31 @@ class MyRobot(wpilib.IterativeRobot):
         """This function is called periodically during autonomous."""
         self.auto_mode.periodic_update()
 
+    def teleopInit(self):
+        self.teleop_mode.init()
+
     def teleopPeriodic(self):
         """This function is called periodically during operator control."""
         self.teleop_mode.periodic_update()
+
+    def testInit(self):
+        self.test_mode.init()
 
     def testPeriodic(self):
         """This function is called periodically during test mode."""
         self.test_mode.periodic_update()
         wpilib.LiveWindow.run()
+
+    def disabledInit(self):
+        self.disabled_mode.init()
+
+    def disabledPeriodic(self):
+        self.disabled_mode.periodic_update()
+
+
+
+    def free(self):
+        self.robot_objects.subsystems.drive_base.thread_timer.cancel()
 
 if __name__ == "__main__":
     wpilib.run(MyRobot)

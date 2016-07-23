@@ -8,3 +8,11 @@ class Disabled:
         """
 
         self.robot_objects = robot_objects
+
+    def init(self):
+        pass
+
+    def periodic_update(self):
+        pass
+
+
